@@ -1,0 +1,1788 @@
+﻿KodeId;OId;Verdi;Navn
+60396;9060;FA;Farmasøyt
+60397;9060;PS;Psykolog
+60398;9060;PE;Perfusjonist
+60399;9060;OR;Ortoptist
+60400;9060;OP;Optiker
+60401;9060;OI;Ortopedingeniør
+60402;9060;OA;Omsorgsarbeider
+60403;9060;MT;Manuellterapeut
+60404;9060;RA;Radiograf
+60405;9060;LE;Lege
+60406;9060;KE;Klinisk ernæringsfysiolog
+60407;9060;JO;Jordmor
+60408;9060;HS;Helsesøster
+60409;9060;HP;Hjelpepleier
+60410;9060;HE;Helsesekretær
+60411;9060;FT;Fysioterapeut
+60412;9060;FO;Fotterapeut
+60413;9060;KI;Kiropraktor
+60414;9060;SP;Sykepleier
+60415;7478;1;0,5 ved sengetid
+60416;7478;5436;Påsmøres i tynt lag 5 kvelder i uken
+60417;7478;5435;Påsmøres hver 4. time i våken tid av døgnet
+60418;7478;5433;Settes inn i livmorhulen av lege
+60419;7478;5432;3+3+3+3
+60420;7478;5430;1,5+1,5+1,5+1,5
+60421;7478;5429;0,5+0,5+0,5+0,5
+60422;7478;5427;7,5+7,5+7,5+7,5
+60423;7478;5425;2,25+2,25+2,25+2,25
+60424;7478;5424;1,25+1,25+1,25+1,25
+60425;7478;5422;1,5+1,5+1,5
+60426;7478;5421;10+10+10
+60427;7478;5439;1x3-4 innføres i endetarmen
+60428;7478;5420;8+8+8
+60429;7478;5418;1 innføres i endetarmen ved sengetid
+60430;7478;5417;1x1 innføres i endetarmen
+60431;7478;5415;1-2x3 innføres i endetarmen
+60432;7478;5414;1 inntil x4 innføres i endetarmen
+60433;7478;5411;1x3 innføres i endetarmen
+60434;7478;5405;1x1 innføres i skjeden
+60435;7478;5404;1x1 i skjeden fra eggløsning
+60436;7478;5403;1x1x10 innføres i skjeden
+60437;7478;5402;0+0+1 innføres i skjeden
+60438;7478;5400;0,5 ukentlig
+60439;7478;5399;1 på huden hver uke i 3 uker, 1 ukes pause.
+60440;7478;5419;1 i endetarmen ved anfall
+60441;7478;5398;2 fortynnes med 2 ml saltvann og inhaleres inntilx4
+60442;7478;5442;0,5x3 innføres i endetarmen
+60443;7478;5445;5x1x1$2,5x1x13
+60444;7478;5490;8 daglig
+60445;7478;5489;1x4-6
+60446;7478;5484;5 inntil x4
+60447;7478;5483;2,5-5 inntil x4
+60448;7478;5482;2,5 inntil x4
+60449;7478;5481;2 inntil x5
+60450;7478;5475;1 sc 1 gang pr. uke
+60451;7478;5474;5 inntil x3
+60452;7478;5473;15 inntil x3
+60453;7478;5472;7,5 inntil x3
+60454;7478;5471;2,5 inntil x3
+60455;7478;5444;1x3 med 8 timers mellomrom
+60456;7478;5468;10 inntil x4 i døgnet
+60457;7478;5465;1 daglig i 3 dager
+60458;7478;5462;6 hver uke på fast ukedag
+60459;7478;5461;5 hver uke på fast ukedag
+60460;7478;5460;4 hver uke på fast ukedag
+60461;7478;5459;3 hver uke på fast ukedag
+60462;7478;5458;1 hver 8. uke
+60463;7478;5457;1 sc 2 ganger pr. uke
+60464;7478;5456;1 sc hver 3. måned
+60465;7478;5455;1 sc hver 6. måned
+60466;7478;5453;1 sc hver måned
+60467;7478;5448;2 hver 8.time
+60468;7478;5466;2x6
+60469;7478;5397;2x0$1 etter løs avføring
+60470;7478;5396;Brukes ifølge INR-verdi
+60471;7478;5395;Brukes nøyaktig slik legen har bestemt
+60472;7478;5358;2x1x1$1x1
+60473;7478;5357;1x3x30 innføres i skjeden
+60474;7478;5353;30x1
+60475;7478;5352;4 festes på huden 30 min før inngrep
+60476;7478;5351;3 festes på huden 30 min før inngrep
+60477;7478;5350;2 festes på huden 30 min før inngrep
+60478;7478;5349;1 festes på huden 30 min før inngrep
+60479;7478;5348;1 på samme dato hver måned
+60480;7478;5347;1x1x5 ved sengetid
+60481;7478;5346;2x1 Start 1-2 dager før innreise, fortsett i 7 dager etter utreise
+60482;7478;5345;3 ved sengetid
+60483;7478;5359;1 ved sengetid 1 i løpet av natten
+60484;7478;5344;1 sc hver 12.uke
+60485;7478;5342;2 daglig Røres ut i 30 ml vann og svelges
+60486;7478;5341;1x1x14$1 2 ganger i uken, innføres i skjeden
+60487;7478;5340;1 festes på huden 2 timer før inngrep
+60488;7478;5339;1 tas 1/2-1 time før seksuell aktivitet
+60489;7478;5338;1 tas 1/2-1 time før sengetid
+60490;7478;5337;2 tas 1/2-1 time før sengetid
+60491;7478;5336;0,5 tas 1/2-1 time før sengetid
+60492;7478;5335;2 tas 1-2 timer før sengetid
+60493;7478;5333;1 tas 2-4 timer før sengetid
+60494;7478;5332;1 tas 1-2 timer før sengetid
+60495;7478;5331;1 festes på huden 1 time før inngrep
+60496;7478;5343;1 daglig Røres ut i 15 ml vann og svelges
+60497;7478;5360;1 ved sengetid 1 morgen
+60498;7478;5361;1 i hvert øye hver 2.time i 2-3 dager $ hver 4.-6.time
+60499;7478;5362;1-2 i hvert øye hver 1.-2.time i 2-3 dager $ hver 4.-6.time
+60500;7478;5394;2x0$1x3
+60501;7478;5393;8x1x1$4x1
+60502;7478;5390;20x1x1$10x1
+60503;7478;5389;Et tykt lag på huden en time før inngrep. Tildekkes
+60504;7478;5387;4 i en dose 1.dag og 3.dag
+60505;7478;5384;3 til måltidene
+60506;7478;5383;1 til måltidene
+60507;7478;5382;1 før måltidene
+60508;7478;5381;2 før måltidene
+60509;7478;5380;1 ukentlig
+60510;7478;5379;1 sc 3 ganger pr uke
+60511;7478;5378;Følg vedlagte bruksanvisning
+60512;7478;5376;1x1 ved behov
+60513;7478;5375;2x1x10
+60514;7478;5374;1x1x7
+60515;7478;5373;Startdose: 0,5x1x2 $1x1
+60516;7478;5372;Startdose:1x1x2 $2x1
+60517;7478;5370;1x2 Påsmøres angrepne områder minst 8 timers mellomrom
+60518;7478;5369;1 ukentlig i 4-6 uker
+60519;7478;5368;1 daglig fra femte menstruasjonsdag
+60520;7478;5367;1 daglig fra første menstruasjonsdag
+60521;7478;5366;1 tas ifølge bruksanvisningen
+60522;7478;5365;2 med 1 ukes pause mellom Effekt oppnås 1 uke etter siste dose
+60523;7478;5364;1x2x3 Pensles på $ kan gjentas x3 med 4 dager opphold
+60524;7478;5363;1x2x3 Pensles på $ kan gjentas etter 1 uke
+60525;7478;5491;1-2 i øyet
+60526;7478;5492;1 i hvert øye ved behov
+60527;7478;5493;1-2 ved behov
+60528;7478;5494;1x4x1$1x2 til minst 2 dager etter symptomfrihet
+60529;7478;5577;1+0+0+1 i venstre øye
+60530;7478;5576;1+0+0+1 i høyre øye
+60531;7478;5575;1+0+0+1 Gnis inn dråpevis
+60532;7478;5574;0,5+0+0+0,5
+60533;7478;5573;2+0+0+0x10
+60534;7478;5572;1,25+0+0+1,25
+60535;7478;5571;1+0+0+2
+60536;7478;5570;1+0+0+1x7 i hvert øye
+60537;7478;5569;1+0+0+1x3
+60538;7478;5568;1+0+0+1x10
+60539;7478;5567;1+0+0+1 Påsmøres tynt angrepet
+60540;7478;5578;1+0+0+1 Legges i nedre øyelokksrand
+60541;7478;5566;1+0+0+1 Påsmøres i tynt lag
+60542;7478;5564;1+0+0+1 innføres i endetarmen
+60543;7478;5563;1+0+0+1 i hvert øye
+60544;7478;5562;1+0+0+1 i hvert nesebor
+60545;7478;5561;1+0+0+1 Gnis inn i huden
+60546;7478;5560;1+0+0+1 Gnis inn i hodebunnen
+60547;7478;5559;1+0+0+1
+60548;7478;5558;1+0+0+0 Påsmøres i tynt lag
+60549;7478;5557;1+0+0+0 i venstre øye
+60550;7478;5556;1+0+0+0 i høyre øye
+60551;7478;5555;1+0+0+0 i hvert øye
+60552;7478;5554;1+0+0+0 i hvert nesebor
+60553;7478;5565;1+0+0+1 Påsmøres
+60554;7478;5579;1+0+0+1x5
+60555;7478;5580;1+0+0+1x7
+60556;7478;5581;2+0+0+2x21
+60557;7478;5609;1 sjelden
+60558;7478;5608;Settes inn i livmorhulen av lege eller jordmor
+60559;7478;5607;Settes av helsepersonell
+60560;7478;5606;2 hver uke på fast ukedag
+60561;7478;5604;2 første uke, deretter 1 ukentlig i 6 uker
+60562;7478;5602;Dag1: 2dr hv. 15.min i 6t, så 2 dr hvert 30.min resten av døgn. Dag2: 2 dr/ time. Dag3-14: 2 dr/4.t
+60563;7478;5601;3x3-6. time ved behov
+60564;7478;5600;0,5+0+0,5+0,5
+60565;7478;5599;1+1+1+1 innføres i endetarmen
+60566;7478;5598;1+1+1+1 i venstre øye
+60567;7478;5597;1+1+1+1 i høyre øye
+60568;7478;5596;1+1+1+1 i hvert øye
+60569;7478;5595;1+1+1+1 i hvert nesebor
+60570;7478;5594;1+1+1+1 i ett nesebor
+60571;7478;5593;1-2+1-2+1-2+1-2
+60572;7478;5592;1-2+1-2+1-2+1-2 i øyet
+60573;7478;5591;1-2+1-2+1-2+1-2 i øret
+60574;7478;5590;1-2+1-2+1-2+1-2 i hvert øye
+60575;7478;5588;4+0+0+4 i øret
+60576;7478;5587;3+0+0+3 i øret
+60577;7478;5586;4+0+0+4 i ørene
+60578;7478;5585;3+0+0+3 i ørene
+60579;7478;5584;1-2+0+0+1-2 i hvert øye
+60580;7478;5583;1-2+0+0+1-2
+60581;7478;5582;2+0+0+2x5
+60582;7478;5553;1+0+0+0 i ett nesebor, 0+0+0+1 i det andre neseboret
+60583;7478;5330;1 under tungen uten samtidig innånding
+60584;7478;5552;2+0+0+3
+60585;7478;5550;2+0+0+2 innføres i endetarmen
+60586;7478;5520;0+0+0+30
+60587;7478;5519;0+0+0+3
+60588;7478;5518;0+0+0+2 i hvert nesebor
+60589;7478;5517;0+0+0+1 Påsmøres i tynt lag
+60590;7478;5516;0+0+0+1 Påsmøres
+60591;7478;5515;0+0+0+1 Legges i nedre øyelokksrand
+60592;7478;5514;0+0+0+2
+60593;7478;5513;0+0+0+1 i venstre øye
+60594;7478;5512;0+0+0+1 i høyre øye
+60595;7478;5511;0+0+0+1 i hvert øye
+60596;7478;5510;0+0+0+1 i hvert nesebor
+60597;7478;5521;0+0+0+4
+60598;7478;5509;0+0+0+1 i ett nesebor
+60599;7478;5507;1+0+0+0
+60600;7478;5506;0,5+0+0+0
+60601;7478;5505;Brukes ved behov, slik anvist av lege. Skal ikke brukes mer enn én gang per døgn og maks 2-3 ganger per uke
+60602;7478;5504;1-2 daglig
+60603;7478;5502;6-8 i venstre øre hver 12. time
+60604;7478;5501;6-8 høyre øre hver 12. time
+60605;7478;5500;6-8 i begge ører hver 12. time
+60606;7478;5499;2x8-12
+60607;7478;5498;1-2 tas 30 minutter før sengetid
+60608;7478;5497;1 tas 30 minutter før sengetid
+60609;7478;5495;1,25x3
+60610;7478;5508;0+0+0+1
+60611;7478;5522;8+0+0+0
+60612;7478;5523;7+0+0+0
+60613;7478;5524;6+0+0+0
+60614;7478;5549;2+0+0+2 i hvert nesebor
+60615;7478;5548;2+0+0+2
+60616;7478;5547;2+0+0+1
+60617;7478;5546;2+0+0+0 i hvert nesebor
+60618;7478;5545;2+0+0+0
+60619;7478;5544;3,75+0+0+3,75
+60620;7478;5543;2,5+0+0+2,5
+60621;7478;5542;20+0+0+20
+60622;7478;5541;10+0+0+10x3
+60623;7478;5540;10+0+0+10
+60624;7478;5539;12,5+0+0+12,5
+60625;7478;5538;15+0+0+15
+60626;7478;5537;15+0+0+0
+60627;7478;5536;30+0+0+0
+60628;7478;5535;3+0+0+4
+60629;7478;5534;3+0+0+3
+60630;7478;5533;3+0+0+0
+60631;7478;5532;7,5+0+0+7,5
+60632;7478;5531;6+0+0+6
+60633;7478;5530;5+0+0+5x3
+60634;7478;5529;5+0+0+5
+60635;7478;5528;4+0+0+0 i hvert nesebor
+60636;7478;5527;4+0+0+4
+60637;7478;5526;4+0+0+0
+60638;7478;5525;5+0+0+0
+60639;7478;5551;2+0+0+2x3
+60640;7478;5610;1-2 sjelden
+60641;7478;5329;1 legges under tungen ved anfall
+60642;7478;5326;2 som engangsdose
+60643;7478;120;1x1x7 Påsmøres
+60644;7478;119;1x1x7 Påføres
+60645;7478;118;1x1x7$2x1
+60646;7478;117;1x1x6$1x2
+60647;7478;116;1x1x5
+60648;7478;115;1x1x3
+60649;7478;114;1x1x21 fra første mens.dag$1 ukes pause
+60650;7478;113;1x1x21$1 2 ganger i uken, innføres i skjeden
+60651;7478;112;1x1x21$1 ukes pause
+60652;7478;109;1x1x10
+60653;7478;108;1x1 Påsmøres i tynt lag
+60654;7478;121;1x1-2 innføres i endetarmen
+60655;7478;107;1x1 Påsmøres angrepet område
+60656;7478;105;1x1 Påføres i tynt lag
+60657;7478;104;1x1 Påføres angrepet område
+60658;7478;103;1x1 på huden
+60659;7478;100;1x1 i venstre øye
+60660;7478;99;1x1 i høyre øye
+60661;7478;98;1x1 i hvert øye
+60662;7478;97;1x1 i hvert nesebor
+60663;7478;93;1 daglig
+60664;7478;92;1 ved begynnende anfall. Ny dose ved behov etter minst 2 timer. Maks 6 pr døgn
+60665;7478;91;1 ved begynnende anfall. Ny dose ved behov etter minst 2 timer. Maks 3 pr døgn
+60666;7478;90;1 ved anfall som avtalt med legen
+60667;7478;106;1x1 Påsmøres
+60668;7478;89;1 ved anfall og eventuelt 1 etter minst 2 timer
+60669;7478;122;1x1-2 i 1-2 uker Påføres
+60670;7478;124;1x1-2 i 3-4 uker Påsmøres
+60671;7478;160;1x3
+60672;7478;159;1x2-4 Påsmøres som avtalt med legen
+60673;7478;158;1x2-4 i hvert nesebor
+60674;7478;157;1x2-3 Påsmøres i tynt lag
+60675;7478;156;1x2-3 Påsmøres
+60676;7478;155;1x2-3 Masseres inn i betent hudområde
+60677;7478;154;1x2-3
+60678;7478;153;1x2x7 Påføres
+60679;7478;151;1x2x5 Påsmøres i tynt lag
+60680;7478;148;1x2x3 Pensles på
+60681;7478;147;1x2x14 Påsmøres
+60682;7478;123;1x1-2 i 2-4 uker Påføres
+60683;7478;146;1x2x14 Påsmøres glans penis
+60684;7478;144;1x2 Påsmøres angrepet område
+60685;7478;143;1x2 Påsmøres
+60686;7478;142;1x2 Påføres i tynt lag
+60687;7478;139;1x2x3-4 i øret $1x1
+60688;7478;135;1x2x3-4 i hvert øre $1x1
+60689;7478;132;1x2 i 3-4 uker Påsmøres
+60690;7478;129;1x1-3 inntil x4
+60691;7478;128;1x1-2 Påsmøres tynt angrepet område
+60692;7478;127;1x1-2 Påsmøres i tynt lag
+60693;7478;126;1x1-2 Påsmøres
+60694;7478;125;1x1-2 Påføres
+60695;7478;145;1x2 Påsmøres i tynt lag
+60696;7478;86;1 på huden
+60697;7478;85;1 inntil x6 innføres i endetarmen
+60698;7478;83;1 inntil x4 i hvert øye
+60699;7478;48;1 annenhver uke
+60700;7478;47;1 annenhver måned
+60701;7478;46;1 innføres i skjeden annenhver dag som avtalt
+60702;7478;45;1 annenhver dag, inntil totalt 5 ganger
+60703;7478;44;1 innføres i skjeden 2 ganger i uken
+60704;7478;43;1x1 Start 1-2 dager før innreise, fortsett i 7 dager etter utreise
+60705;7478;42;1x2-3 Masseres inn i smertefullt hudområde
+60706;7478;41;1 annenhver dag
+60707;7478;40;0+0+5
+60708;7478;37;0+0+2x3 innføres i skjeden
+60709;7478;34;0+0+1x7 innføres i skjeden
+60710;7478;49;1 bak øret 5-6 timer før avreise
+60711;7478;33;0+0+1x6 innføres i skjeden
+60712;7478;31;0+0+1x10 innføres i skjeden
+60713;7478;15;0,5x3
+60714;7478;13;0,5x1
+60715;7478;9;1-2 ved sengetid
+60716;7478;8;10 før sengetid
+60717;7478;7;5 tas 1/2-1 time før sengetid
+60718;7478;6;4 som engangsdose
+60719;7478;5;3 tas 1/2-1 time før sengetid
+60720;7478;4;2,5 tas 1/2-1 time før sengetid
+60721;7478;3;2 ved sengetid
+60722;7478;2;1 ved sengetid
+60723;7478;32;0+0+1x3 innføres i skjeden
+60724;7478;52;1 annenhver dag 3 ganger i uken
+60725;7478;56;1 hver 12. time
+60726;7478;57;1 hver 3. måned
+60727;7478;82;1 inntil x4
+60728;7478;81;1 inntil x3 Masseres inn i smertefullt hudområde
+60729;7478;80;1 inntil x3 Masseres inn i betent hudområde
+60730;7478;79;1 inntil x3
+60731;7478;78;1 i venstre øye hver 6. time
+60732;7478;77;1 i venstre øye hver 5. time
+60733;7478;76;1 i venstre øye hver 4. time
+60734;7478;75;1 i venstre øye hver 2. time
+60735;7478;74;1 i høyre øye hver 6. time
+60736;7478;73;1 i høyre øye hver 5. time
+60737;7478;72;1 i høyre øye hver 4. time
+60738;7478;71;1 i høyre øye hver 2. time
+60739;7478;70;1 i hvert øye hver time
+60740;7478;69;1 i hvert øye hver 6. time
+60741;7478;68;1 i hvert øye hver 5. time
+60742;7478;67;1 i hvert øye hver 4. time
+60743;7478;66;1 i hvert øye hver 2. time
+60744;7478;65;1 i ett nesebor 5 min. før diegivning eller pumping
+60745;7478;64;1 i ett nesebor ved anfall. Ny dose ved behov etter minst 2 timer
+60746;7478;63;1 hver uke på fast ukedag
+60747;7478;62;1 hver uke
+60748;7478;61;1 hver 4.time slik legen har bestemt
+60749;7478;60;1 hver 4.-5.time
+60750;7478;59;1 hver 4. uke
+60751;7478;58;1 hver 3. uke
+60752;7478;161;1x3 fra 3 dager før ventet menstruasjon
+60753;7478;162;1x3 i hvert nesebor
+60754;7478;163;1x3 i hvert øye
+60755;7478;164;1x3 i høyre øye
+60756;7478;342;5+5+5
+60757;7478;337;5x3x7
+60758;7478;336;5x3
+60759;7478;334;5x1
+60760;7478;333;40x1
+60761;7478;332;4+4+4
+60762;7478;328;4x3
+60763;7478;324;4x1x3
+60764;7478;323;4x1
+60765;7478;322;3+3+3
+60766;7478;318;3x3 i øret
+60767;7478;343;5+5+5+5
+60768;7478;317;3x3
+60769;7478;312;3x1
+60770;7478;311;2-4x3 i øret
+60771;7478;310;2-3x3 i øret
+60772;7478;309;22,5x3
+60773;7478;308;20x3
+60774;7478;306;20x1
+60775;7478;305;2+2+2+2
+60776;7478;304;2+2+2
+60777;7478;303;2+2+0
+60778;7478;293;2,5+2,5+2,5+2,5
+60779;7478;292;2,5+2,5+2,5
+60780;7478;313;3x1x3
+60781;7478;344;6x1
+60782;7478;346;6x3x10-14
+60783;7478;349;7,5x3
+60784;7478;5325;1-2 under tungen uten samtidig innånding
+60785;7478;5324;4 ved sengetid
+60786;7478;5323;4 daglig
+60787;7478;381;3 daglig
+60788;7478;379;2x1
+60789;7478;378;5 daglig
+60790;7478;377;50 som engangsdose
+60791;7478;376;5 som engangsdose
+60792;7478;375;1 fortynnes med 2 ml saltvann og inhaleres inntil x4
+60793;7478;374;1 fortynnes med 2 ml saltvann og inhaleres x4
+60794;7478;369;Settes inn i skjeden.Tas ut etter 3 uker. Ny ring settes inn etter 1 uke.
+60795;7478;368;Settes inn i livmorhulen av lege innen 7 dager etter påbegynt menstruasjon.
+60796;7478;367;Påsmøres i tynt lag 2 kvelder i uken
+60797;7478;366;Påsmøres i tynt lag 3 kvelder i uken
+60798;7478;365;Påsmøres i tynt lag hver annen dag
+60799;7478;364;Påsmøres flere ganger daglig som avtalt med lege
+60800;7478;363;Påsmøres flere ganger daglig
+60801;7478;362;Påføres i tynt lag
+60802;7478;361;Påføres hver 2. time i våken tid av døgnet i 4 dager
+60803;7478;360;Påføres 1-2 ganger ukentlig på angrepet negl
+60804;7478;359;Plasteret skiftes to faste dager hver uke
+60805;7478;358;Plasteret skiftes en fast dag hver uke
+60806;7478;357;1 inntil x1 Plasteret bør være festet på huden i minst 4 timer og høyst 12 timer.
+60807;7478;355;1x3x1$1x2
+60808;7478;354;Dosen påføres intra-analt hver 12. time
+60809;7478;290;2,5x5
+60810;7478;5328;1 som engangsdose
+60811;7478;288;2,5x3
+60812;7478;283;2x3-4
+60813;7478;223;10x3
+60814;7478;220;10x1
+60815;7478;219;10 inntil x3
+60816;7478;218;1+1+2
+60817;7478;217;1+1+1+1
+60818;7478;216;1+1+1
+60819;7478;215;1+1+0
+60820;7478;213;1+0+1+0
+60821;7478;190;1,5x1
+60822;7478;186;1x6
+60823;7478;185;1x5x5 Påsmøres
+60824;7478;224;10x5
+60825;7478;183;1x5 Påsmøres
+60826;7478;181;1x5
+60827;7478;180;1x4 Legges i nedre øyelokksrand
+60828;7478;179;3x1 Start 1-2 dager før innreise, fortsett i 7 dager etter utreise
+60829;7478;173;1x3-4 Påsmøres
+60830;7478;172;1x3-4
+60831;7478;171;1x3x7
+60832;7478;170;1x3x10
+60833;7478;169;1x3 Påsmøres i tynt lag
+60834;7478;168;1x3 Påsmøres
+60835;7478;167;1x3 Legges i nedre øyelokksrand
+60836;7478;165;1x3 i venstre øye
+60837;7478;182;1x5 Legges i nedre øyelokksrand
+60838;7478;229;10+10+10+10
+60839;7478;231;1-2 i hvert øye hver 4.time
+60840;7478;233;1-2 inntil x3
+60841;7478;282;2x3 i øret
+60842;7478;281;2x3
+60843;7478;280;2x2-3
+60844;7478;274;2x1x5
+60845;7478;273;2x1x3
+60846;7478;269;2x1 på huden
+60847;7478;268;2x1 i hvert nesebor
+60848;7478;266;2 daglig
+60849;7478;264;2 til måltidene
+60850;7478;263;2 inntil x4
+60851;7478;262;2 i uken på fast ukedag Start 1 uke før avreise
+60852;7478;261;2 hver 4.time slik legen har bestemt
+60853;7478;260;2 hver 4.-5.time
+60854;7478;259;1 så raskt som mulig, men ikke senere enn 120 timer etter ubeskyttet samleie eller prevensjonssvikt
+60855;7478;258;1x1x1$0,5x1x4
+60856;7478;257;17,5x3
+60857;7478;254;15x3
+60858;7478;252;15x1
+60859;7478;249;12,5x3
+60860;7478;243;1-2x3-4
+60861;7478;242;1-2x3 i øyet
+60862;7478;241;1-2x3 i øret
+60863;7478;240;1-2x3
+60864;7478;235;1-2 ved behov inntil x4
+60865;7478;234;1-2 inntil x4
+60866;7478;286;2,5x1
+60867;7478;5611;1-3 sjelden
+61628;7402;L;Legemiddel
+61629;7402;A;Annet
+61630;7484;AMP;stk ampulle(r )
+61631;7484;MLAMP;milliliter (i) ampulle
+61632;7484;MLGL;milliliter (i) glass(beholder)
+61633;7484;MLHGL;milliliter (i) hetteglass
+61634;7484;MLPEN;milliliter (i) penn
+61635;7484;MLPIP;milliliter (i) pipette
+61636;7484;MLPL;milliliter (i) plastbeholder
+61637;7484;MLSETT;milliliter (i) sett
+61638;7484;MLSL;milliliter sleep safe
+61639;7484;MLSPR;milliliter (i) sprøyte
+61640;7484;MLST;milliliter stay safe
+61641;7484;MLSTART;milliliter (i) startpakning
+61642;7484;MLSYL;milliliter (i) sylinderampulle
+61643;7484;PAR;par
+61644;7484;PENN;ferdigfylt penn
+61645;7484;PLATE;plate
+61646;7484;POSER;poser
+61647;7484;SERIE;serie
+61648;7484;SETT;sett
+61649;7484;SPR;sprøyte
+61650;7484;SPRAY;spray
+61651;7484;START;startpakning
+61652;7484;STRT;startpakning
+61653;7484;SYL;sylindretter
+61654;7484;ML;milliliter
+61655;7484;SYLAMP;sylinderampulle(r)
+61656;7484;MG;milligram
+61657;7484;MCG;mikrogram
+61658;7484;BULK;bulk
+61659;7484;CM;centimeter
+61660;7484;DATOP;stk i blister, datopakning
+61661;7484;DISK;diskstativ/diskdisplay
+61662;7484;DOS;doser
+61663;7484;DOSE;dose
+61664;7484;DOSEP;dose i dosepose(r)
+61665;7484;DOSER;doser
+61666;7484;DUSIN;dusin
+61667;7484;ENDOS;stk i blister, endose
+61668;7484;ENP;stk i blister
+61669;7484;ENPAC;stk i blister
+61670;7484;G;gram
+61671;7484;G SPR;gram (i) sprøyte
+61672;7484;GULV;stk gulvstativ/gulvdisplay
+61673;7484;HGL;hetteglass
+61674;7484;KG;kilogram
+61675;7484;KOMBP;kombinasjonspakning
+61676;7484;KOMBPK;kombinasjonspakning
+61677;7484;KULER;kuler
+61678;7484;L;liter
+61679;7484;L PL;liter (i) plast(beholder)
+61680;7484;M;meter
+61681;7484;MCL;mikroliter
+61682;7484;TOKAM;tokammerpose/amp/spr
+61683;9090;mg Fe;milligram jern
+61684;9090;mg FNE;milligram fenytoinnatriumekvivalenter
+61685;9090;mg I;milligram iod
+61686;9090;mg K;milligram kalium
+61687;9090;mg Mg;milligram magnesium (ion)
+61688;9090;mg Zn;milligram sink
+61689;9090;mikrog;mikrogram
+61690;9090;mikrog HA;mikrogram haemagglutinin
+61691;9090;mikroliter;mikroliter
+61692;9090;mikromol;mikromol
+61693;9090;mill E;millioner enheter
+61694;9090;mill IE;millioner internasjonale enheter
+61695;9090;mg F;milligram fluor
+61696;9090;ml;milliliter
+61697;9090;mmol Li;millimol Litium
+61698;9090;mol;mol
+61699;9090;PFU;plaque forming units
+61700;9090;PhEur. enheter;enheter etter standard i den europeiske farmakope
+61701;9090;ppm (mol pr. mol);parts per million beregnet som mol/mol
+61702;9090;SA.U;tilstrekkelig mengde til å oppnå et titer av agglutinerende antistoff på 1 log10 i marsvin
+61703;9090;SN.U;titer av serumnøytraliserende antistoff fra vaksinasjon av marsvin
+61704;9090;SQ-E;standardiserte kvalitetsenheter
+61705;9090;SQ-T;standardiserte kvalitetsenheter for tablett
+61706;9090;IC;konsentrasjonsindeks
+61707;9090;Normal;normal
+61708;9090;IR;reaktivitetsindeks
+61709;9090;mmol;millimol
+61710;9090;OMEQ;orale morfinekvivalenter
+61711;9090;mg Ca;milligram kalsium
+61712;9090;MBq;megabequerel
+61713;9090;% w/v;prosent gitt som vekt per volum
+61714;9090;% w/w;prosent gitt som vekt per vekt
+61715;9090;(ikke angitt);ikke angitt
+61716;9090;10E10 bakterier;10 opphøyd i 10'ende bakterier
+61717;9090;10E9 bakterier;10 opphøyd i 9'ende bakterier
+61718;9090;antigen enheter;antigen enheter
+61719;9090;anti-heparin IE;anti-heparin internasjonale enheter
+61720;9090;CCID50;Cell Culture Infective Dose 50%
+61721;9090;cfu;colony forming units
+61722;9090;D-antigen enheter;Enheter av smittsomme poliovirus
+61723;9090;E;enheter
+61724;9090;ELISA E;ELISA-enheter
+61725;9090;mg;milligram
+61726;9090;ELISA RU;relative ELISA-enheter
+61727;9090;g Ca;gram kalsium
+61728;9090;g N;gram nitrogen
+61729;9090;GBq;gigabequerel
+61730;9090;HEP;Histaminekvivalenter basert på prikktesting
+61731;9090;IE;internasjonale enheter
+61732;9090;IE anti-Xa;internasjonale enheter antistoff
+61733;9090;IU;international units
+61734;9090;kBq;kilobequerel
+61735;9090;kg;kilogram
+61736;9090;KIU;kallidinogenase inactivator unit
+61737;9090;kJ;kilojoule
+61738;9090;LD50 enheter;den statistisk bestemte dødelige dosen hos 50 % av dyrene
+61739;9090;g;gram
+61740;9090;%;prosent
+61741;3402;3032;Gjerdrum
+61742;3402;3033;Ullensaker
+61743;3402;3034;Nes
+61744;3402;3035;Eidsvoll
+61745;3402;3036;Nannestad
+61746;3402;3037;Hurdal
+61747;3402;3038;Hole
+61748;3402;3039;Flå
+61749;3402;3040;Nesbyen
+61750;3402;3041;Gol
+61751;3402;3042;Hemsedal
+61752;3402;3043;Ål
+61753;3402;3044;Hol
+61754;3402;3045;Sigdal
+61755;3402;3046;Krødsherad
+61756;3402;3047;Modum
+61757;3402;3048;Øvre Eiker
+61758;3402;3049;Lier
+61759;3402;3050;Flesberg
+61760;3402;3031;Nittedal
+61761;3402;3030;Lillestrøm
+61762;3402;3029;Lørenskog
+61763;3402;3028;Enebakk
+61764;3402;3005;Drammen
+61765;3402;3006;Kongsberg
+61766;3402;3007;Ringerike
+61767;3402;3011;Hvaler
+61768;3402;3012;Aremark
+61769;3402;3013;Marker
+61770;3402;3014;Indre Østfold
+61771;3402;3015;Skiptvet
+61772;3402;3016;Rakkestad
+61773;3402;3051;Rollag
+61774;3402;3017;Råde
+61775;3402;3019;Vestby
+61776;3402;3020;Nordre Follo
+61777;3402;3021;Ås
+61778;3402;3022;Frogn
+61779;3402;3023;Nesodden
+61780;3402;3024;Bærum
+61781;3402;3025;Asker
+61782;3402;3026;Aurskog-Høland
+61783;3402;3027;Rælingen
+61784;3402;3018;Våler (Viken)
+61785;3402;3004;Fredrikstad
+61786;3402;3052;Nore og Uvdal
+61787;3402;3054;Lunner
+61788;3402;3431;Dovre
+61789;3402;3432;Lesja
+61790;3402;3433;Skjåk
+61791;3402;3434;Lom
+61792;3402;3435;Vågå
+61793;3402;3436;Nord-Fron
+61794;3402;3437;Sel
+61795;3402;3438;Sør-Fron
+61796;3402;3439;Ringebu
+61797;3402;3440;Øyer
+61798;3402;3441;Gausdal
+61799;3402;3442;Østre Toten
+61800;3402;3443;Vestre Toten
+61801;3402;3446;Gran
+61802;3402;3447;Søndre Land
+61803;3402;3448;Nordre Land
+61804;3402;3449;Sør-Aurdal
+61805;3402;3450;Etnedal
+61806;3402;3451;Nord-Aurdal
+61807;3402;3430;Os
+61808;3402;3429;Folldal
+61809;3402;3428;Alvdal
+61810;3402;3427;Tynset
+61811;3402;3401;Kongsvinger
+61812;3402;3403;Hamar
+61813;3402;3405;Lillehammer
+61814;3402;3407;Gjøvik
+61815;3402;3411;Ringsaker
+61816;3402;3412;Løten
+61817;3402;3413;Stange
+61818;3402;3414;Nord-Odal
+61819;3402;3415;Sør-Odal
+61820;3402;3053;Jevnaker
+61821;3402;3416;Eidskog
+61822;3402;3418;Åsnes
+61823;3402;3419;Våler (Innlandet)
+61824;3402;3420;Elverum
+61825;3402;3421;Trysil
+61826;3402;3422;Åmot
+61827;3402;3423;Stor-Elvdal
+61828;3402;3424;Rendalen
+61829;3402;3425;Engerdal
+61830;3402;3426;Tolga
+61831;3402;3417;Grue
+61832;3402;3003;Sarpsborg
+61833;3402;3002;Moss
+61834;3402;3001;Halden
+61835;3402;1845;Sørfold
+61836;3402;1848;Steigen
+61837;3402;1849;Hamarøy - Hábmer
+61838;3402;1850;Divtasvuodna - Tysfjord
+61839;3402;1851;Lødingen
+61840;3402;1852;Tjeldsund
+61841;3402;1853;Evenes
+61842;3402;1854;Ballangen
+61843;3402;1856;Røst
+61844;3402;1857;Værøy
+61845;3402;1859;Flakstad
+61846;3402;1860;Vestvågøy
+61847;3402;1865;Vågan
+61848;3402;1866;Hadsel
+61849;3402;1867;Bø
+61850;3402;1868;Øksnes
+61851;3402;1870;Sortland
+61852;3402;1871;Andøy
+61853;3402;1874;Moskenes
+61854;3402;1842;Skjerstad
+61855;3402;1841;Fauske - Fuossko
+61856;3402;1840;Saltdal
+61857;3402;1839;Beiarn
+61858;3402;1811;Bindal
+61859;3402;1812;Sømna
+61860;3402;1813;Brønnøy
+61861;3402;1815;Vega
+61862;3402;1816;Vevelstad
+61863;3402;1818;Herøy (Nordland)
+61864;3402;1820;Alstahaug
+61865;3402;1822;Leirfjord
+61866;3402;1824;Vefsn
+61867;3402;1875;Hamarøy
+61868;3402;1825;Grane
+61869;3402;1827;Dønna
+61870;3402;1828;Nesna
+61871;3402;1832;Hemnes
+61872;3402;1833;Rana
+61873;3402;1834;Lurøy
+61874;3402;1835;Træna
+61875;3402;1836;Rødøy
+61876;3402;1837;Meløy
+61877;3402;1838;Gildeskål
+61878;3402;1826;Aarborte - Hattfjelldal
+61879;3402;1901;Harstad
+61880;3402;1902;Tromsø
+61881;3402;1903;Harstad - Hárstták
+61882;3402;2002;Vardø
+61883;3402;2003;Vadsø
+61884;3402;2004;Hammerfest
+61885;3402;2011;Guovdageaidnu - Kautokeino
+61886;3402;2012;Alta
+61887;3402;2014;Loppa
+61888;3402;2015;Hasvik
+61889;3402;2016;Sørøysund
+61890;3402;2017;Kvalsund
+61891;3402;2001;Hammerfest
+61892;3402;2018;Måsøy
+61893;3402;2020;Porsanger - Porsángu - Porsanki
+61894;3402;2021;Kárášjohka - Karasjok
+61895;3402;2022;Lebesby
+61896;3402;2023;Gamvik
+61897;3402;2024;Berlevåg
+61898;3402;2025;Deatnu - Tana
+61899;3402;2027;Unjárga - Nesseby
+61900;3402;2028;Båtsfjord
+61901;3402;2030;Sør-Varanger
+61902;3402;2019;Nordkapp
+61903;3402;3452;Vestre Slidre
+61904;3402;1943;Kvænangen
+61905;3402;1941;Skjervøy
+61906;3402;1911;Kvæfjord
+61907;3402;1913;Skånland
+61908;3402;1915;Bjarkøy
+61909;3402;1917;Ibestad
+61910;3402;1919;Gratangen
+61911;3402;1920;Loabák - Lavangen
+61912;3402;1922;Bardu
+61913;3402;1923;Salangen
+61914;3402;1924;Målselv
+61915;3402;1942;Nordreisa - Ráisa - Raisi
+61916;3402;1925;Sørreisa
+61917;3402;1927;Tranøy
+61918;3402;1928;Torsken
+61919;3402;1929;Berg
+61920;3402;1931;Lenvik
+61921;3402;1933;Balsfjord
+61922;3402;1936;Karlsøy
+61923;3402;1938;Lyngen
+61924;3402;1939;Storfjord - Omasvuotna - Omasvuono
+61925;3402;1940;Gáivuotna - Kåfjord - Kaivuono
+61926;3402;1926;Dyrøy
+61927;3402;1806;Narvik
+61928;3402;3453;Øystre Slidre
+61929;3402;3801;Horten
+61930;3402;5035;Stjørdal
+61931;3402;5036;Frosta
+61932;3402;5037;Levanger
+61933;3402;5038;Verdal
+61934;3402;5039;Verran
+61935;3402;5040;Namdalseid
+61936;3402;5041;Snåase - Snåsa
+61937;3402;5042;Lierne
+61938;3402;5043;Raarvihke - Røyrvik
+61939;3402;5044;Namsskogan
+61940;3402;5045;Grong
+61941;3402;5046;Høylandet
+61942;3402;5047;Overhalla
+61943;3402;5048;Fosnes
+61944;3402;5049;Flatanger
+61945;3402;5050;Vikna
+61946;3402;5051;Nærøy
+61947;3402;5052;Leka
+61948;3402;5053;Inderøy
+61949;3402;5034;Meråker
+61950;3402;5033;Tydal
+61951;3402;5032;Selbu
+61952;3402;5031;Malvik
+61953;3402;5011;Hemne
+61954;3402;5012;Snillfjord
+61955;3402;5013;Hitra
+61956;3402;5014;Frøya
+61957;3402;5015;Ørland
+61958;3402;5016;Agdenes
+61959;3402;5017;Bjugn
+61960;3402;5018;Åfjord
+61961;3402;5019;Roan
+61962;3402;5054;Indre Fosen
+61963;3402;5020;Osen
+61964;3402;5022;Rennebu
+61965;3402;5023;Meldal
+61966;3402;5024;Orkdal
+61967;3402;5025;Røros
+61968;3402;5026;Holtålen
+61969;3402;5027;Midtre Gauldal
+61970;3402;5028;Melhus
+61971;3402;5029;Skaun
+61972;3402;5030;Klæbu
+61973;3402;5021;Oppdal
+61974;3402;5007;Namsos
+61975;3402;5055;Heim
+61976;3402;5057;Ørland
+61977;3402;5425;Storfjord - Omasvuotna - Omasvuono
+61978;3402;5426;Gáivuotna - Kåfjord - Kaivuono
+61979;3402;5427;Skjervøy
+61980;3402;5428;Nordreisa
+61981;3402;5429;Kvænangen
+61982;3402;5430;Guovdageaidnu - Kautokeino
+61983;3402;5432;Loppa
+61984;3402;5433;Hasvik
+61985;3402;5434;Måsøy
+61986;3402;5435;Nordkapp
+61987;3402;5436;Porsanger - Porsá?gu - Porsanki
+61988;3402;5437;Kárášjohka - Karasjok
+61989;3402;5438;Lebesby
+61990;3402;5439;Gamvik
+61991;3402;5440;Berlevåg
+61992;3402;5441;Deatnu - Tana
+61993;3402;5442;Unjárga - Nesseby
+61994;3402;5443;Båtsfjord
+61995;3402;5444;Sør-Varanger
+61996;3402;5424;Lyngen
+61997;3402;5423;Karlsøy
+61998;3402;5422;Balsfjord
+61999;3402;5421;Senja
+62000;3402;5058;Åfjord
+62001;3402;5059;Orkland
+62002;3402;5060;Nærøysund
+62003;3402;5061;Rindal
+62004;3402;5401;Tromsø
+62005;3402;5402;Harstad
+62006;3402;5403;Alta
+62007;3402;5404;Vardø
+62008;3402;5405;Vadsø
+62009;3402;5056;Hitra
+62010;3402;5406;Hammerfest
+62011;3402;5412;Tjeldsund
+62012;3402;5413;Ibestad
+62013;3402;5414;Gratangen
+62014;3402;5415;Loabák - Lavangen
+62015;3402;5416;Bardu
+62016;3402;5417;Salangen
+62017;3402;5418;Målselv
+62018;3402;5419;Sørreisa
+62019;3402;5420;Dyrøy
+62020;3402;5411;Kvæfjord
+62021;3402;5006;Steinkjer
+62022;3402;5005;Namsos
+62023;3402;5004;Steinkjer
+62024;3402;4203;Arendal
+62025;3402;4204;Kristiansand
+62026;3402;4205;Lindesnes
+62027;3402;4206;Farsund
+62028;3402;4207;Flekkefjord
+62029;3402;4211;Gjerstad
+62030;3402;4212;Vegårshei
+62031;3402;4213;Tvedestrand
+62032;3402;4214;Froland
+62033;3402;4215;Lillesand
+62034;3402;4216;Birkenes
+62035;3402;4217;Åmli
+62036;3402;4218;Iveland
+62037;3402;4219;Evje og Hornnes
+62038;3402;4220;Bygland
+62039;3402;4221;Valle
+62040;3402;4222;Bykle
+62041;3402;4223;Vennesla
+62042;3402;4224;Åseral
+62043;3402;4202;Grimstad
+62044;3402;4201;Risør
+62045;3402;3825;Vinje
+62046;3402;3824;Tokke
+62047;3402;3802;Holmestrand
+62048;3402;3803;Tønsberg
+62049;3402;3804;Sandefjord
+62050;3402;3805;Larvik
+62051;3402;3806;Porsgrunn
+62052;3402;3807;Skien
+62053;3402;3808;Notodden
+62054;3402;3811;Færder
+62055;3402;3812;Siljan
+62056;3402;4225;Lyngdal
+62057;3402;3813;Bamble
+62058;3402;3815;Drangedal
+62059;3402;3816;Nome
+62060;3402;3817;Midt-Telemark
+62061;3402;3818;Tinn
+62062;3402;3819;Hjartdal
+62063;3402;3820;Seljord
+62064;3402;3821;Kviteseid
+62065;3402;3822;Nissedal
+62066;3402;3823;Fyresdal
+62067;3402;3814;Kragerø
+62068;3402;4226;Hægebostad
+62069;3402;4227;Kvinesdal
+62070;3402;4228;Sirdal
+62071;3402;4633;Fedje
+62072;3402;4634;Masfjorden
+62073;3402;4635;Gulen
+62074;3402;4636;Solund
+62075;3402;4637;Hyllestad
+62076;3402;4638;Høyanger
+62077;3402;4639;Vik
+62078;3402;4640;Sogndal
+62079;3402;4641;Aurland
+62080;3402;4632;Austrheim
+62081;3402;4642;Lærdal
+62082;3402;4644;Luster
+62083;3402;4645;Askvoll
+62084;3402;4646;Fjaler
+62085;3402;4647;Sunnfjord
+62086;3402;4648;Bremanger
+62087;3402;4649;Stad
+62088;3402;4650;Gloppen
+62089;3402;4651;Stryn
+62090;3402;5001;Trondheim
+62091;3402;4643;Årdal
+62092;3402;3454;Vang
+62093;3402;4631;Alver
+62094;3402;4629;Modalen
+62095;3402;4601;Bergen
+62096;3402;4602;Kinn
+62097;3402;4611;Etne
+62098;3402;4612;Sveio
+62099;3402;4613;Bømlo
+62100;3402;4614;Stord
+62101;3402;4615;Fitjar
+62102;3402;4616;Tysnes
+62103;3402;4617;Kvinnherad
+62104;3402;4630;Osterøy
+62105;3402;4618;Ullensvang
+62106;3402;4620;Ulvik
+62107;3402;4621;Voss
+62108;3402;4622;Kvam
+62109;3402;4623;Samnanger
+62110;3402;4624;Bjørnafjorden
+62111;3402;4625;Austevoll
+62112;3402;4626;Øygarden
+62113;3402;4627;Askøy
+62114;3402;4628;Vaksdal
+62115;3402;4619;Eidfjord
+62116;3402;1805;Narvik
+62117;3402;1804;Bodø
+62118;3402;1756;Inderøy
+62119;3402;0633;Nore og Uvdal
+62120;3402;0701;Horten
+62121;3402;0702;Holmestrand
+62122;3402;0704;Tønsberg
+62123;3402;0706;Sandefjord
+62124;3402;0709;Larvik
+62125;3402;0710;Sandefjord
+62126;3402;0711;Svelvik
+62127;3402;0712;Larvik
+62128;3402;0713;Sande
+62129;3402;0714;Hof
+62130;3402;0715;Holmestrand
+62131;3402;0716;Re
+62132;3402;0718;Ramnes
+62133;3402;0719;Andebu
+62134;3402;0720;Stokke
+62135;3402;0722;Nøtterøy
+62136;3402;0723;Tjøme
+62137;3402;0728;Lardal
+62138;3402;0632;Rollag
+62139;3402;0631;Flesberg
+62140;3402;0628;Hurum
+62141;3402;0627;Røyken
+62142;3402;0542;Nord-Aurdal
+62143;3402;0543;Vestre Slidre
+62144;3402;0544;Øystre Slidre
+62145;3402;0545;Vang
+62146;3402;0602;Drammen
+62147;3402;0604;Kongsberg
+62148;3402;0605;Ringerike
+62149;3402;0612;Hole
+62150;3402;0615;Flå
+62151;3402;0729;Færder
+62152;3402;0616;Nes
+62153;3402;0618;Hemsedal
+62154;3402;0619;Ål
+62155;3402;0620;Hol
+62156;3402;0621;Sigdal
+62157;3402;0622;Krødsherad
+62158;3402;0623;Modum
+62159;3402;0624;Øvre Eiker
+62160;3402;0625;Nedre Eiker
+62161;3402;0626;Lier
+62162;3402;0617;Gol
+62163;3402;0541;Etnedal
+62164;3402;0805;Porsgrunn
+62165;3402;0807;Notodden
+62166;3402;0920;Øyestad
+62167;3402;0921;Tromøy
+62168;3402;0922;Hisøy
+62169;3402;0926;Lillesand
+62170;3402;0928;Birkenes
+62171;3402;0929;Åmli
+62172;3402;0935;Iveland
+62173;3402;0937;Evje og Hornnes
+62174;3402;0938;Bygland
+62175;3402;0940;Valle
+62176;3402;0941;Bykle
+62177;3402;1001;Kristiansand
+62178;3402;1002;Mandal
+62179;3402;1003;Farsund
+62180;3402;1004;Flekkefjord
+62181;3402;1014;Vennesla
+62182;3402;1017;Songdalen
+62183;3402;1018;Søgne
+62184;3402;1021;Marnardal
+62185;3402;0919;Froland
+62186;3402;0918;Moland
+62187;3402;0914;Tvedestrand
+62188;3402;0912;Vegårshei
+62189;3402;0811;Siljan
+62190;3402;0814;Bamble
+62191;3402;0815;Kragerø
+62192;3402;0817;Drangedal
+62193;3402;0819;Nome
+62194;3402;0821;Bø
+62195;3402;0822;Sauherad
+62196;3402;0826;Tinn
+62197;3402;0827;Hjartdal
+62198;3402;0806;Skien
+62199;3402;0828;Seljord
+62200;3402;0830;Nissedal
+62201;3402;0831;Fyresdal
+62202;3402;0833;Tokke
+62203;3402;0834;Vinje
+62204;3402;0901;Risør
+62205;3402;0903;Arendal
+62206;3402;0904;Grimstad
+62207;3402;0906;Arendal
+62208;3402;0911;Gjerstad
+62209;3402;0829;Kviteseid
+62210;3402;0540;Sør-Aurdal
+62211;3402;0538;Nordre Land
+62212;3402;0536;Søndre Land
+62213;3402;0137;Våler
+62214;3402;0138;Hobøl
+62215;3402;0211;Vestby
+62216;3402;0213;Ski
+62217;3402;0214;Ås
+62218;3402;0215;Frogn
+62219;3402;0216;Nesodden
+62220;3402;0217;Oppegård
+62221;3402;0219;Bærum
+62222;3402;0220;Asker
+62223;3402;0221;Aurskog-Høland
+62224;3402;0226;Sørum
+62225;3402;0227;Fet
+62226;3402;0228;Rælingen
+62227;3402;0229;Enebakk
+62228;3402;0230;Lørenskog
+62229;3402;0231;Skedsmo
+62230;3402;0233;Nittedal
+62231;3402;0234;Gjerdrum
+62232;3402;0136;Rygge
+62233;3402;0135;Råde
+62234;3402;0134;Onsøy
+62235;3402;0133;Kråkerøy
+62236;3402;0102;Sarpsborg
+62237;3402;0103;Fredrikstad
+62238;3402;0104;Moss
+62239;3402;0105;Sarpsborg
+62240;3402;0106;Fredrikstad
+62241;3402;0111;Hvaler
+62242;3402;0113;Borge
+62243;3402;0114;Varteig
+62244;3402;0115;Skjeberg
+62245;3402;0235;Ullensaker
+62246;3402;0118;Aremark
+62247;3402;0121;Rømskog
+62248;3402;0122;Trøgstad
+62249;3402;0123;Spydeberg
+62250;3402;0124;Askim
+62251;3402;0125;Eidsberg
+62252;3402;0127;Skiptvet
+62253;3402;0128;Rakkestad
+62254;3402;0130;Tune
+62255;3402;0131;Rolvsøy
+62256;3402;0119;Marker
+62257;3402;0236;Nes
+62258;3402;0237;Eidsvoll
+62259;3402;0238;Nannestad
+62260;3402;0439;Folldal
+62261;3402;0441;Os
+62262;3402;0501;Lillehammer
+62263;3402;0502;Gjøvik
+62264;3402;0511;Dovre
+62265;3402;0512;Lesja
+62266;3402;0513;Skjåk
+62267;3402;0514;Lom
+62268;3402;0515;Vågå
+62269;3402;0438;Alvdal
+62270;3402;0516;Nord-Fron
+62271;3402;0519;Sør-Fron
+62272;3402;0520;Ringebu
+62273;3402;0521;Øyer
+62274;3402;0522;Gausdal
+62275;3402;0528;Østre Toten
+62276;3402;0529;Vestre Toten
+62277;3402;0532;Jevnaker
+62278;3402;0533;Lunner
+62279;3402;0534;Gran
+62280;3402;0517;Sel
+62281;3402;1026;Åseral
+62282;3402;0437;Tynset
+62283;3402;0434;Engerdal
+62284;3402;0239;Hurdal
+62285;3402;0301;Oslo
+62286;3402;0401;Hamar
+62287;3402;0402;Kongsvinger
+62288;3402;0403;Hamar
+62289;3402;0412;Ringsaker
+62290;3402;0414;Vang
+62291;3402;0415;Løten
+62292;3402;0417;Stange
+62293;3402;0436;Tolga
+62294;3402;0418;Nord-Odal
+62295;3402;0420;Eidskog
+62296;3402;0423;Grue
+62297;3402;0425;Åsnes
+62298;3402;0426;Våler
+62299;3402;0427;Elverum
+62300;3402;0428;Trysil
+62301;3402;0429;Åmot
+62302;3402;0430;Stor-Elvdal
+62303;3402;0432;Rendalen
+62304;3402;0419;Sør-Odal
+62305;3402;1027;Audnedal
+62306;3402;1029;Lindesnes
+62307;3402;1032;Lyngdal
+62308;3402;1547;Aukra
+62309;3402;1548;Fræna
+62310;3402;1551;Eide
+62311;3402;1554;Averøy
+62312;3402;1556;Frei
+62313;3402;1557;Gjemnes
+62314;3402;1560;Tingvoll
+62315;3402;1563;Sunndal
+62316;3402;1566;Surnadal
+62317;3402;1567;Rindal
+62318;3402;1569;Aure
+62319;3402;1571;Halsa
+62320;3402;1572;Tustna
+62321;3402;1573;Smøla
+62322;3402;1576;Aure
+62323;3402;1577;Volda
+62324;3402;1578;Fjord
+62325;3402;1579;Hustadvika
+62326;3402;1601;Trondheim
+62327;3402;1546;Sandøy
+62328;3402;1545;Midsund
+62329;3402;1543;Nesset
+62330;3402;1539;Rauma
+62331;3402;1505;Kristiansund
+62332;3402;1506;Molde
+62333;3402;1507;Ålesund
+62334;3402;1511;Vanylven
+62335;3402;1514;Sande
+62336;3402;1515;Herøy (Møre og Romsdal)
+62337;3402;1516;Ulstein
+62338;3402;1517;Hareid
+62339;3402;1519;Volda
+62340;3402;1612;Hemne
+62341;3402;1520;Ørsta
+62342;3402;1524;Norddal
+62343;3402;1525;Stranda
+62344;3402;1526;Stordal
+62345;3402;1528;Sykkylven
+62346;3402;1529;Skodje
+62347;3402;1531;Sula
+62348;3402;1532;Giske
+62349;3402;1534;Haram
+62350;3402;1535;Vestnes
+62351;3402;1523;Ørskog
+62352;3402;1613;Snillfjord
+62353;3402;1617;Hitra
+62354;3402;1620;Frøya
+62355;3402;1717;Frosta
+62356;3402;1718;Leksvik
+62357;3402;1719;Levanger
+62358;3402;1721;Verdal
+62359;3402;1723;Mosvik
+62360;3402;1724;Verran
+62361;3402;1725;Namdalseid
+62362;3402;1729;Inderøy
+62363;3402;1736;Snåase - Snåsa
+62364;3402;1714;Stjørdal
+62365;3402;1738;Lierne
+62366;3402;1740;Namsskogan
+62367;3402;1742;Grong
+62368;3402;1743;Høylandet
+62369;3402;1744;Overhalla
+62370;3402;1748;Fosnes
+62371;3402;1749;Flatanger
+62372;3402;1750;Vikna
+62373;3402;1751;Nærøy
+62374;3402;1755;Leka
+62375;3402;1739;Raarvihke - Røyrvik
+62376;3402;1504;Ålesund
+62377;3402;1711;Meråker
+62378;3402;1702;Steinkjer
+62379;3402;1621;Ørland
+62380;3402;1622;Agdenes
+62381;3402;1624;Rissa
+62382;3402;1627;Bjugn
+62383;3402;1630;Åfjord
+62384;3402;1632;Roan
+62385;3402;1633;Osen
+62386;3402;1634;Oppdal
+62387;3402;1635;Rennebu
+62388;3402;1703;Namsos
+62389;3402;1636;Meldal
+62390;3402;1640;Røros
+62391;3402;1644;Holtålen
+62392;3402;1648;Midtre Gauldal
+62393;3402;1653;Melhus
+62394;3402;1657;Skaun
+62395;3402;1662;Klæbu
+62396;3402;1663;Malvik
+62397;3402;1664;Selbu
+62398;3402;1665;Tydal
+62399;3402;1638;Orkdal
+62400;3402;9999;Uoppgitt
+62401;3402;1503;Kristiansund
+62402;3402;1449;Stryn
+62403;3402;1144;Kvitsøy
+62404;3402;1145;Bokn
+62405;3402;1146;Tysvær
+62406;3402;1149;Karmøy
+62407;3402;1151;Utsira
+62408;3402;1154;Vindafjord
+62409;3402;1159;Ølen
+62410;3402;1160;Vindafjord
+62411;3402;1201;Bergen
+62412;3402;1211;Etne
+62413;3402;1214;Ølen
+62414;3402;1216;Sveio
+62415;3402;1219;Bømlo
+62416;3402;1221;Stord
+62417;3402;1222;Fitjar
+62418;3402;1223;Tysnes
+62419;3402;1224;Kvinnherad
+62420;3402;1227;Jondal
+62421;3402;1228;Odda
+62422;3402;1142;Rennesøy
+62423;3402;1141;Finnøy
+62424;3402;1135;Sauda
+62425;3402;1134;Suldal
+62426;3402;1034;Hægebostad
+62427;3402;1037;Kvinesdal
+62428;3402;1046;Sirdal
+62429;3402;1101;Eigersund
+62430;3402;1102;Sandnes
+62431;3402;1103;Stavanger
+62432;3402;1106;Haugesund
+62433;3402;1108;Sandnes
+62434;3402;1111;Sokndal
+62435;3402;1231;Ullensvang
+62436;3402;1112;Lund
+62437;3402;1119;Hå
+62438;3402;1120;Klepp
+62439;3402;1121;Time
+62440;3402;1122;Gjesdal
+62441;3402;1124;Sola
+62442;3402;1127;Randaberg
+62443;3402;1129;Forsand
+62444;3402;1130;Strand
+62445;3402;1133;Hjelmeland
+62446;3402;1114;Bjerkreim
+62447;3402;1232;Eidfjord
+62448;3402;1233;Ulvik
+62449;3402;1234;Granvin
+62450;3402;1417;Vik
+62451;3402;1418;Balestrand
+62452;3402;1419;Leikanger
+62453;3402;1420;Sogndal
+62454;3402;1421;Aurland
+62455;3402;1422;Lærdal
+62456;3402;1424;Årdal
+62457;3402;1426;Luster
+62458;3402;1428;Askvoll
+62459;3402;1416;Høyanger
+62460;3402;1429;Fjaler
+62461;3402;1431;Jølster
+62462;3402;1432;Førde
+62463;3402;1433;Naustdal
+62464;3402;1438;Bremanger
+62465;3402;1439;Vågsøy
+62466;3402;1441;Selje
+62467;3402;1443;Eid
+62468;3402;1444;Hornindal
+62469;3402;1445;Gloppen
+62470;3402;1430;Gaular
+62471;3402;1502;Molde
+62472;3402;1413;Hyllestad
+62473;3402;1411;Gulen
+62474;3402;1235;Voss
+62475;3402;1238;Kvam
+62476;3402;1241;Fusa
+62477;3402;1242;Samnanger
+62478;3402;1243;Os
+62479;3402;1244;Austevoll
+62480;3402;1245;Sund
+62481;3402;1246;Fjell
+62482;3402;1247;Askøy
+62483;3402;1412;Solund
+62484;3402;1251;Vaksdal
+62485;3402;1253;Osterøy
+62486;3402;1256;Meland
+62487;3402;1259;Øygarden
+62488;3402;1260;Radøy
+62489;3402;1263;Lindås
+62490;3402;1264;Austrheim
+62491;3402;1265;Fedje
+62492;3402;1266;Masfjorden
+62493;3402;1401;Flora
+62494;3402;1252;Modalen
+62495;3402;0101;Halden
+62496;99900;1547;AUKRA
+62497;99900;1539;RAUMA
+62498;99900;1535;VESTNES
+62499;99900;1532;GISKE
+62500;99900;1531;SULA
+62501;99900;1528;SYKKYLVEN
+62502;99900;1525;STRANDA
+62503;99900;1578;FJORD
+62504;99900;1520;ØRSTA
+62505;99900;1579;HUSTADVIKA
+62506;99900;1517;HAREID
+62507;99900;1515;HERØY
+62508;99900;1514;SANDE
+62509;99900;1511;VANYLVEN
+62510;99900;1505;KRISTIANSUND
+62511;99900;1507;ÅLESUND
+62512;99900;1506;MOLDE
+62513;99900;4651;STRYN
+62514;99900;4650;GLOPPEN
+62515;99900;1577;VOLDA
+62516;99900;1516;ULSTEIN
+62517;99900;1554;AVERØY
+62518;99900;1557;GJEMNES
+62519;99900;1560;TINGVOLL
+62520;99900;1832;HEMNES
+62521;99900;1828;NESNA
+62522;99900;1827;DØNNA
+62523;99900;1826;HATTFJELLDAL
+62524;99900;1825;GRANE
+62525;99900;1824;VEFSN
+62526;99900;1822;LEIRFJORD
+62527;99900;1820;ALSTAHAUG
+62528;99900;1818;HERØY
+62529;99900;1816;VEVELSTAD
+62530;99900;1815;VEGA
+62531;99900;1813;BRØNNØY
+62532;99900;1812;SØMNA
+62533;99900;1811;BINDAL
+62534;99900;1806;NARVIK
+62535;99900;1804;BODØ
+62536;99900;1576;AURE
+62537;99900;1573;SMØLA
+62538;99900;5055;HEIM
+62539;99900;1566;SURNADAL
+62540;99900;1563;SUNNDAL
+62541;99900;4649;STAD
+62542;99900;4648;BREMANGER
+62543;99900;4647;SUNNFJORD
+62544;99900;4646;FJALER
+62545;99900;4621;VOSS
+62546;99900;4620;ULVIK
+62547;99900;4619;EIDFJORD
+62548;99900;4618;ULLENSVANG
+62549;99900;4617;KVINNHERAD
+62550;99900;4616;TYSNES
+62551;99900;4615;FITJAR
+62552;99900;4614;STORD
+62553;99900;4613;BØMLO
+62554;99900;4612;SVEIO
+62555;99900;4611;ETNE
+62556;99900;4601;BERGEN
+62557;99900;1160;VINDAFJORD
+62558;99900;1151;UTSIRA
+62559;99900;1149;KARMØY
+62560;99900;1146;TYSVÆR
+62561;99900;1145;BOKN
+62562;99900;1144;KVITSØY
+62563;99900;1135;SAUDA
+62564;99900;1134;SULDAL
+62565;99900;1133;HJELMELAND
+62566;99900;4622;KVAM
+62567;99900;1833;RANA
+62568;99900;4624;BJØRNAFJORDEN
+62569;99900;4625;AUSTEVOLL
+62570;99900;4645;ASKVOLL
+62571;99900;4644;LUSTER
+62572;99900;4643;ÅRDAL
+62573;99900;4642;LÆRDAL
+62574;99900;4641;AURLAND
+62575;99900;4640;SOGNDAL
+62576;99900;4639;VIK
+62577;99900;4638;HØYANGER
+62578;99900;4637;HYLLESTAD
+62579;99900;4636;SOLUND
+62580;99900;4635;GULEN
+62581;99900;4602;KINN
+62582;99900;4634;MASFJORDEN
+62583;99900;4633;FEDJE
+62584;99900;4632;AUSTRHEIM
+62585;99900;4631;ALVER
+62586;99900;4630;OSTERØY
+62587;99900;4629;MODALEN
+62588;99900;4628;VAKSDAL
+62589;99900;4627;ASKØY
+62590;99900;4626;ØYGARDEN
+62591;99900;4623;SAMNANGER
+62592;99900;1130;STRAND
+62593;99900;1834;LURØY
+62594;99900;1836;RØDØY
+62595;99900;5022;RENNEBU
+62596;99900;5021;OPPDAL
+62597;99900;5020;OSEN
+62598;99900;5058;ÅFJORD
+62599;99900;5057;ØRLAND
+62600;99900;5014;FRØYA
+62601;99900;5059;ORKLAND
+62602;99900;5056;HITRA
+62603;99900;5007;NAMSOS
+62604;99900;5025;RØROS
+62605;99900;5006;STEINKJER
+62606;99900;5443;BÅTSFJORD
+62607;99900;5442;NESSEBY
+62608;99900;5441;TANA
+62609;99900;5440;BERLEVÅG
+62610;99900;5439;GAMVIK
+62611;99900;5438;LEBESBY
+62612;99900;5437;KARASJOK
+62613;99900;5436;PORSANGER
+62614;99900;5435;NORDKAPP
+62615;99900;5444;SØR-VARANGER
+62616;99900;5026;HOLTÅLEN
+62617;99900;5027;MIDTRE GAULDAL
+62618;99900;5028;MELHUS
+62619;99900;5054;INDRE FOSEN
+62620;99900;5053;INDERØY
+62621;99900;5052;LEKA
+62622;99900;5060;NÆRØYSUND
+62623;99900;5049;FLATANGER
+62624;99900;5047;OVERHALLA
+62625;99900;5046;HØYLANDET
+62626;99900;5045;GRONG
+62627;99900;5044;NAMSSKOGAN
+62628;99900;5043;RØYRVIK
+62629;99900;5042;LIERNE
+62630;99900;5041;SNÅSA
+62631;99900;5038;VERDAL
+62632;99900;5037;LEVANGER
+62633;99900;5036;FROSTA
+62634;99900;5035;STJØRDAL
+62635;99900;5034;MERÅKER
+62636;99900;5033;TYDAL
+62637;99900;5032;SELBU
+62638;99900;5031;MALVIK
+62639;99900;5029;SKAUN
+62640;99900;5434;MÅSØY
+62641;99900;5433;HASVIK
+62642;99900;5432;LOPPA
+62643;99900;5403;ALTA
+62644;99900;1871;ANDØY
+62645;99900;1870;SORTLAND
+62646;99900;1868;ØKSNES
+62647;99900;1867;BØ
+62648;99900;1866;HADSEL
+62649;99900;1865;VÅGAN
+62650;99900;1860;VESTVÅGØY
+62651;99900;1859;FLAKSTAD
+62652;99900;1857;VÆRØY
+62653;99900;1856;RØST
+62654;99900;1853;EVENES
+62655;99900;5412;TJELDSUND
+62656;99900;1851;LØDINGEN
+62657;99900;1875;HAMARØY
+62658;99900;1848;STEIGEN
+62659;99900;1845;SØRFOLD
+62660;99900;1841;FAUSKE
+62661;99900;1840;SALTDAL
+62662;99900;1839;BEIARN
+62663;99900;1838;GILDESKÅL
+62664;99900;1837;MELØY
+62665;99900;1874;MOSKENES
+62666;99900;1835;TRÆNA
+62667;99900;5401;TROMSØ
+62668;99900;5411;KVÆFJORD
+62669;99900;5430;KAUTOKEINO
+62670;99900;5406;HAMMERFEST
+62671;99900;5405;VADSØ
+62672;99900;5404;VARDØ
+62673;99900;5429;KVÆNANGEN
+62674;99900;5428;NORDREISA
+62675;99900;5427;SKJERVØY
+62676;99900;5426;KÅFJORD
+62677;99900;5425;STORFJORD
+62678;99900;5424;LYNGEN
+62679;99900;5423;KARLSØY
+62680;99900;5422;BALSFJORD
+62681;99900;5421;SENJA
+62682;99900;5420;DYRØY
+62683;99900;5419;SØRREISA
+62684;99900;5418;MÅLSELV
+62685;99900;5417;SALANGEN
+62686;99900;5416;BARDU
+62687;99900;5415;LAVANGEN
+62688;99900;5414;GRATANGEN
+62689;99900;5413;IBESTAD
+62690;99900;5402;HARSTAD
+62691;99900;1127;RANDABERG
+62692;99900;1124;SOLA
+62693;99900;1122;GJESDAL
+62694;99900;3036;NANNESTAD
+62695;99900;3035;EIDSVOLL
+62696;99900;3034;NES
+62697;99900;3033;ULLENSAKER
+62698;99900;3032;GJERDRUM
+62699;99900;3031;NITTEDAL
+62700;99900;3030;LILLESTRØM
+62701;99900;3029;LØRENSKOG
+62702;99900;3028;ENEBAKK
+62703;99900;3037;HURDAL
+62704;99900;3027;RÆLINGEN
+62705;99900;3024;BÆRUM
+62706;99900;3023;NESODDEN
+62707;99900;3022;FROGN
+62708;99900;3021;ÅS
+62709;99900;3020;NORDRE FOLLO
+62710;99900;3019;VESTBY
+62711;99900;3018;VÅLER (VIKEN)
+62712;99900;3017;RÅDE
+62713;99900;3016;RAKKESTAD
+62714;99900;3025;ASKER
+62715;99900;3401;KONGSVINGER
+62716;99900;3403;HAMAR
+62717;99900;3411;RINGSAKER
+62718;99900;3407;GJØVIK
+62719;99900;3405;LILLEHAMMER
+62720;99900;3430;OS (INNLANDET)
+62721;99900;3429;FOLLDAL
+62722;99900;3428;ALVDAL
+62723;99900;3427;TYNSET
+62724;99900;3426;TOLGA
+62725;99900;3425;ENGERDAL
+62726;99900;3424;RENDALEN
+62727;99900;3423;STOR-ELVDAL
+62728;99900;3422;ÅMOT
+62729;99900;3421;TRYSIL
+62730;99900;3420;ELVERUM
+62731;99900;3419;VÅLER (INNLANDET)
+62732;99900;3418;ÅSNES
+62733;99900;3417;GRUE
+62734;99900;3416;EIDSKOG
+62735;99900;3415;SØR-ODAL
+62736;99900;3414;NORD-ODAL
+62737;99900;3413;STANGE
+62738;99900;3412;LØTEN
+62739;99900;3015;SKIPTVET
+62740;99900;3014;INDRE ØSTFOLD
+62741;99900;3026;AURSKOG-HØLAND
+62742;99900;3013;MARKER
+62743;99900;2004;Hammerfest
+62744;99900;2003;Vadsø
+62745;99900;2002;Vardø
+62746;99900;1943;Kvænangen
+62747;99900;1942;Nordreisa
+62748;99900;1941;Skjervøy
+62749;99900;1940;Gaivuotna - Kåfjord
+62750;99900;1939;Storfjord
+62751;99900;1938;Lyngen
+62752;99900;1936;Karlsøy
+62753;99900;1933;Balsfjord
+62754;99900;1931;Lenvik
+62755;99900;1929;Berg
+62756;99900;1928;Torsken
+62757;99900;1927;Tranøy
+62758;99900;1926;Dyrøy
+62759;99900;1209;Fana
+62760;99900;5017;Bjugn
+62761;99900;1201;Bergen
+62762;99900;0301;Oslo
+62763;99900;1243;Os
+62764;99900;2011;Guovdageaidnu-Kautokeino
+62765;99900;3431;DOVRE
+62766;99900;2012;Alta
+62767;99900;2015;Hasvik
+62768;99900;3012;AREMARK
+62769;99900;3011;HVALER
+62770;99900;3004;FREDRIKSTAD
+62771;99900;3003;SARPSBORG
+62772;99900;3002;MOSS
+62773;99900;3001;HALDEN
+62774;99900;1223;Tysnes
+62775;99900;1222;Fitjar
+62776;99900;1221;Stord
+62777;99900;2030;Sør-Varanger
+62778;99900;2028;Båtsfjord
+62779;99900;2027;Unjarga-Nesseby
+62780;99900;2025;Deatnu - Tana
+62781;99900;2024;Berlevåg
+62782;99900;2023;Gamvik
+62783;99900;2022;Lebesby
+62784;99900;2021;Karasjohka-Karasjok
+62785;99900;2020;Porsanger
+62786;99900;2019;Nordkapp
+62787;99900;2018;Måsøy
+62788;99900;2017;Kvalsund
+62789;99900;2014;Loppa
+62790;99900;3432;LESJA
+62791;99900;3433;SKJÅK
+62792;99900;3434;LOM
+62793;99900;4217;ÅMLI
+62794;99900;4216;BIRKENES
+62795;99900;4215;LILLESAND
+62796;99900;4214;FROLAND
+62797;99900;4213;TVEDESTRAND
+62798;99900;4212;VEGÅRSHEI
+62799;99900;4211;GJERSTAD
+62800;99900;4203;ARENDAL
+62801;99900;4202;GRIMSTAD
+62802;99900;4201;RISØR
+62803;99900;3825;VINJE
+62804;99900;3824;TOKKE
+62805;99900;3823;FYRESDAL
+62806;99900;3822;NISSEDAL
+62807;99900;3821;KVITESEID
+62808;99900;3820;SELJORD
+62809;99900;3819;HJARTDAL
+62810;99900;3818;TINN
+62811;99900;3817;MIDT-TELEMARK
+62812;99900;3816;NOME
+62813;99900;3815;DRANGEDAL
+62814;99900;4218;IVELAND
+62815;99900;3814;KRAGERØ
+62816;99900;4219;EVJE OG HORNNES
+62817;99900;4221;VALLE
+62818;99900;1121;TIME
+62819;99900;1120;KLEPP
+62820;99900;1119;HÅ
+62821;99900;1114;BJERKREIM
+62822;99900;1112;LUND
+62823;99900;1111;SOKNDAL
+62824;99900;1106;HAUGESUND
+62825;99900;1103;STAVANGER
+62826;99900;1108;SANDNES
+62827;99900;1101;EIGERSUND
+62828;99900;4228;SIRDAL
+62829;99900;4227;KVINESDAL
+62830;99900;4226;HÆGEBOSTAD
+62831;99900;4225;LYNGDAL
+62832;99900;4224;ÅSERAL
+62833;99900;4223;VENNESLA
+62834;99900;4207;FLEKKEFJORD
+62835;99900;4206;FARSUND
+62836;99900;4205;LINDESNES
+62837;99900;4204;KRISTIANSAND
+62838;99900;4222;BYKLE
+62839;99900;4220;BYGLAND
+62840;99900;5061;RINDAL
+62841;99900;3813;BAMBLE
+62842;99900;3808;NOTODDEN
+62843;99900;3005;DRAMMEN
+62844;99900;3454;VANG
+62845;99900;3453;ØYSTRE SLIDRE
+62846;99900;3452;VESTRE SLIDRE
+62847;99900;3451;NORD-AURDAL
+62848;99900;3450;ETNEDAL
+62849;99900;3449;SØR-AURDAL
+62850;99900;3448;NORDRE LAND
+62851;99900;3447;SØNDRE LAND
+62852;99900;3446;GRAN
+62853;99900;3054;LUNNER
+62854;99900;3053;JEVNAKER
+62855;99900;3443;VESTRE TOTEN
+62856;99900;3442;ØSTRE TOTEN
+62857;99900;3441;GAUSDAL
+62858;99900;3440;ØYER
+62859;99900;3439;RINGEBU
+62860;99900;3438;SØR-FRON
+62861;99900;3437;SEL
+62862;99900;3436;NORD-FRON
+62863;99900;3435;VÅGÅ
+62864;99900;3006;KONGSBERG
+62865;99900;3812;SILJAN
+62866;99900;3007;RINGERIKE
+62867;99900;3039;FLÅ
+62868;99900;3807;SKIEN
+62869;99900;3806;PORSGRUNN
+62870;99900;3811;FÆRDER
+62871;99900;3802;HOLMESTRAND
+62872;99900;3805;LARVIK
+62873;99900;3804;SANDEFJORD
+62874;99900;3803;TØNSBERG
+62875;99900;3801;HORTEN
+62876;99900;3052;NORE OG UVDAL
+62877;99900;3051;ROLLAG
+62878;99900;3050;FLESBERG
+62879;99900;3049;LIER
+62880;99900;3048;ØVRE EIKER
+62881;99900;3047;MODUM
+62882;99900;3046;KRØDSHERAD
+62883;99900;3045;SIGDAL
+62884;99900;3044;HOL
+62885;99900;3043;ÅL
+62886;99900;3042;HEMSEDAL
+62887;99900;3041;GOL
+62888;99900;3040;NESBYEN
+62889;99900;3038;HOLE
+62890;99900;5001;Trondheim
+63199;7502;ad;ad
+63200;7502;qs;qs
+63201;7421;A;Reseptgruppe A
+63202;7421;B;Reseptgruppe B
+63203;7421;C;Reseptgruppe C
+63204;7421;CF;Reseptgruppe CF
+63205;7421;F;Reseptgruppe F
+63206;7421;K;Kosttilskudd
+65713;7427;990;Inhalasjonsveiledning
+65714;7427;950;H-resept
+65715;7427;900;§10-7i
+65716;7427;800;§5-25
+65717;7427;703;§5-22P
+65718;7427;700;§5-22
+65719;7427;604;§5-14 §6.4
+65720;7427;603;§5-14 §6.3
+65721;7427;602;§5-14 §6.2
+65722;7427;601;§5-14 §6.1
+65723;7427;600;§5-14 §6
+65724;7427;514;§5-14 §5.14
+65725;7427;513;§5-14 §5.13
+65726;7427;512;§5-14 §5.12
+65727;7427;511;§5-14 §5.11
+65728;7427;510;§5-14 §5.10
+65729;7427;509;§5-14 §5.9
+65730;7427;200;§5-14 §2
+65731;7427;300;§5-14 §3
+65732;7427;301;§5-14 §3a
+65733;7427;302;§5-14 §3b
+65734;7427;400;§5-14 §4
+65735;7427;500;§5-14 §5
+65736;7427;991;Oppstartsveiledning
+65737;7427;501;§5-14 §5.1
+65738;7427;503;§5-14 §5.3
+65739;7427;504;§5-14 §5.4
+65740;7427;505;§5-14 §5.5
+65741;7427;506;§5-14 §5.6
+65742;7427;507;§5-14 §5.7
+65743;7427;508;§5-14 §5.8
+65744;7427;502;§5-14 §5.2
+65745;7427;100;§5-14
+65746;9009501;KOM01;Difteri, poliomyelitt, tetanus
+65747;9009501;DTP51;"	Kikhoste (inaktivert, helcelle) difteri (toksoid), tetanus (toksoid)"
+65748;9009501;ANX01;ANX01
+65749;9003103;2;Gift
+65750;9003103;4;Skilt
+65751;9003103;1;Ugift
+65752;9003101;0;Ikke spesifisert
+65753;9003101;1;Mann
+65754;9003101;2;Kvinne
+65755;9003101;9;Ikke kjent
+65756;9003101;3;Usikkert kjønn
