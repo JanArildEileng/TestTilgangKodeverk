@@ -1,3 +1,4 @@
+using Fhi.Lmr.Grunndata.Kodeverk.Apiklient;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -39,6 +40,14 @@ namespace TilgangKodeverk
             services.AddDbContext<TilgangKodeverkContext>(options =>
                   options.UseSqlServer(Configuration.GetConnectionString("TilgangKodeverkDB")));
 
+
+            services.AddHttpClient(
+              "GrunndataKodeverkHttpKlient", c => {
+                  c.BaseAddress = new Uri(Configuration["GrunndataKodeverk:ApiUrl"]);
+              }
+            );
+
+            services.AddSingleton<GrunndataKodeverkHttpKlient>();
             services.AddScoped<IValidKodeverkKodeCheckService, ValidKodeverkKodeCheckService>();
     
 
