@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TilgangKodeverk.DataAksess;
+using TilgangKodeverk.Service;
 
 namespace TilgangKodeverk
 {
@@ -38,6 +39,8 @@ namespace TilgangKodeverk
             services.AddDbContext<TilgangKodeverkContext>(options =>
                   options.UseSqlServer(Configuration.GetConnectionString("TilgangKodeverkDB")));
 
+            services.AddScoped<IValidKodeverkKodeCheckService, ValidKodeverkKodeCheckService>();
+    
 
         }
 
