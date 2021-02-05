@@ -1,19 +1,17 @@
+using Fhi.Lmr.Felles.TilgangKodeverk;
+using Fhi.Lmr.Felles.TilgangKodeverk.Contracts;
 using Fhi.Lmr.Grunndata.Kodeverk.Apiklient;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using TilgangKodeverk.DataAksess;
-using TilgangKodeverk.Service;
+using TilgangKodeverk.DataAksess.Repository;
+
 
 namespace TilgangKodeverk
 {
@@ -48,8 +46,10 @@ namespace TilgangKodeverk
             );
 
             services.AddSingleton<GrunndataKodeverkHttpKlient>();
-            services.AddScoped<IValidKodeverkKodeCheckService, ValidKodeverkKodeCheckService>();
-    
+        
+
+            services.AddScoped<IKodeverkRepository, KodeverkRepository>();
+            services.AddTilgangKodeverk();
 
         }
 

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using TilgangKodeverk.Model.Dto;
+﻿using Fhi.Lmr.Felles.TilgangKodeverk.Model.Dto;
+using System.Collections.Generic;
 
-namespace TilgangKodeverk.Service
+namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
 {
     public interface IValidKodeverkKodeCheckService
     {

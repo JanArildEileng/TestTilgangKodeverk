@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TilgangKodeverk.DataAksess;
 
 namespace TilgangKodeverk.DataAksess.Migrations
 {
     [DbContext(typeof(TilgangKodeverkContext))]
-    partial class TilgangKodeverkContextModelSnapshot : ModelSnapshot
+    [Migration("20210204095415_KlassifikasjonId")]
+    partial class KlassifikasjonId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,9 +27,6 @@ namespace TilgangKodeverk.DataAksess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
-
-                    b.Property<DateTime?>("Lastchecked")
-                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("Nedlasted")
                         .HasColumnType("datetime2");

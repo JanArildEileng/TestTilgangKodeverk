@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fhi.Lmr.Grunndata.Kodeverk.Apiklient" Version="0.1.1-CI-20201208-073744" />
+    <PackageReference Include="Fhi.Lmr.Grunndata.Kodeverk.Apiklient" Version="0.1.1-CI-20210204-143642" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" NoWarn="NU1605" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" NoWarn="NU1605" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
@@ -18,7 +18,11 @@
 
   <ItemGroup>
     <Folder Include="DataAksess\Migrations\" />
-    <Folder Include="DataAksess\Repository\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fhi.Lmr.Felles.TilgangKodeverk\Fhi.Lmr.Felles.TilgangKodeverk.csproj" />
   </ItemGroup>
 
   <ItemGroup>

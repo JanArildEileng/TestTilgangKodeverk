@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{0EE0E936-18B
 		UttrekkKoder.sql = UttrekkKoder.sql
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fhi.Lmr.Felles.TilgangKodeverk", "Fhi.Lmr.Felles.TilgangKodeverk\Fhi.Lmr.Felles.TilgangKodeverk.csproj", "{45C0AC92-0116-4163-887F-D08BC878056C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{83D9F5E7-EC73-492A-AAC4-5191902531C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{D8C61F2E-B0D3-42CA-9298-76E2E3BE4295}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8C61F2E-B0D3-42CA-9298-76E2E3BE4295}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8C61F2E-B0D3-42CA-9298-76E2E3BE4295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C0AC92-0116-4163-887F-D08BC878056C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C0AC92-0116-4163-887F-D08BC878056C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C0AC92-0116-4163-887F-D08BC878056C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C0AC92-0116-4163-887F-D08BC878056C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D9F5E7-EC73-492A-AAC4-5191902531C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D9F5E7-EC73-492A-AAC4-5191902531C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D9F5E7-EC73-492A-AAC4-5191902531C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D9F5E7-EC73-492A-AAC4-5191902531C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

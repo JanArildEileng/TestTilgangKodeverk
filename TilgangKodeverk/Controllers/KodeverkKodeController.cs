@@ -1,13 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Fhi.Lmr.Felles.TilgangKodeverk.Entities;
+using Fhi.Lmr.Felles.TilgangKodeverk.Model.Dto;
+using Fhi.Lmr.Felles.TilgangKodeverk.Service;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using TilgangKodeverk.DataAksess;
-using TilgangKodeverk.Entities;
-using TilgangKodeverk.Model.Dto;
-using TilgangKodeverk.Service;
 
 namespace TilgangKodeverk.Controllers
 {

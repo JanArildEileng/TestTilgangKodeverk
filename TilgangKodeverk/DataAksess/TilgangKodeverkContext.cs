@@ -1,10 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using Fhi.Lmr.Felles.TilgangKodeverk.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using TilgangKodeverk.Entities;
 
 namespace TilgangKodeverk.DataAksess
 {
@@ -14,10 +11,16 @@ namespace TilgangKodeverk.DataAksess
 
 
         public DbSet<KodeverkKode> KodeverkKoder { get; set; }
+        public DbSet<Klassifikasjon> Klassifikasjon { get; set; }
+        
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Klassifikasjon>(
+          e => e.HasKey(klassifikasjon => klassifikasjon.KlassifikasjonId));
+
+
             modelBuilder.Entity<KodeverkKode>(
                 e => e.HasKey(kodeverkKode => kodeverkKode.KodeverkKodeId));
 
