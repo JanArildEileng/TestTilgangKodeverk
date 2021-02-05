@@ -38,18 +38,9 @@ namespace TilgangKodeverk
             services.AddDbContext<TilgangKodeverkContext>(options =>
                   options.UseSqlServer(Configuration.GetConnectionString("TilgangKodeverkDB")));
 
-
-            services.AddHttpClient(
-              "GrunndataKodeverkHttpKlient", c => {
-                  c.BaseAddress = new Uri(Configuration["GrunndataKodeverk:ApiUrl"]);
-              }
-            );
-
-            services.AddSingleton<GrunndataKodeverkHttpKlient>();
-        
-
+            /* Tilgang kodeverk */              
             services.AddScoped<IKodeverkRepository, KodeverkRepository>();
-            services.AddTilgangKodeverk();
+            services.AddTilgangKodeverk(Configuration);
 
         }
 

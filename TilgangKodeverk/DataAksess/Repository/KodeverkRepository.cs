@@ -29,7 +29,7 @@ namespace TilgangKodeverk.DataAksess.Repository
 
         public KodeverkKode GetKodeverkKode(int oid, string verdi)
         {
-            return tilgangKodeverkContext.KodeverkKoder.FirstOrDefault(k => k.OId == oid && k.Verdi.Equals(verdi));
+            return tilgangKodeverkContext.KodeverkKoder.AsNoTracking().FirstOrDefault(k => k.OId == oid && k.Verdi.Equals(verdi));
         }
 
         public void UpdateKodeverkKoder(int oid, IEnumerable<KodeverkKode> updatedKodeverkKodeListe)

@@ -6,6 +6,7 @@ using Fhi.Lmr.Grunndata.Kodeverk.Apiklient;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,34 +18,58 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
 
     public class ValidKodeverkKodeCheckService : IValidKodeverkKodeCheckService
     {
-        private readonly IConfiguration configuration;
-        private readonly GrunndataKodeverkHttpKlient grunndataKodeverkHttpKlient;
         private readonly ILogger<ValidKodeverkKodeCheckService> logger;
         private readonly IKodeverkRepository kodeverkRepository;
         private readonly IKlassifikasjonService klassifikasjonService;
         private readonly MemoryCache kodeverkKodeCache;
-     
-
+   
         MemoryCacheEntryOptions cacheEntryOptions;
 
-        public int UpdateIntervalInMinuttes { get; set; }
-
-        public ValidKodeverkKodeCheckService(IConfiguration configuration, GrunndataKodeverkHttpKlient grunndataKodeverkHttpKlient, ILogger<ValidKodeverkKodeCheckService> logger, KodeverkKodeMemoryCache kodeverkKodeMemoryCache, IKodeverkRepository kodeverkRepository, IKlassifikasjonService klassifikasjonService)
+   
+        public ValidKodeverkKodeCheckService(IOptions<GrunndataKodeverkOption> grunndataKodeverkOption,ILogger<ValidKodeverkKodeCheckService> logger, KodeverkKodeMemoryCache kodeverkKodeMemoryCache, IKodeverkRepository kodeverkRepository, IKlassifikasjonService klassifikasjonService)
         {
-            this.configuration = configuration;
-            this.grunndataKodeverkHttpKlient = grunndataKodeverkHttpKlient;
             this.logger = logger;
             this.kodeverkRepository = kodeverkRepository;
             this.klassifikasjonService = klassifikasjonService;
             this.kodeverkKodeCache = kodeverkKodeMemoryCache.Cache;
-            this.UpdateIntervalInMinuttes = int.Parse(configuration["GrunndataKodeverk:UpdateIntervalInMinuttes"]);
-
+          
             //TODO
             this.cacheEntryOptions = new MemoryCacheEntryOptions()
-                .SetAbsoluteExpiration(DateTime.Now.AddMinutes(1));  //konfigurerbart..
-
+                .SetAbsoluteExpiration(DateTime.Now.AddMinutes(int.Parse(grunndataKodeverkOption.Value.KodeverkKodeExpiration)));  
         }
 
+        public bool IsValidCheck(int oid, string verdi)
+        {
+            KodeverkKodeCacheKey kodeverkKodeCacheKey = new KodeverkKodeCacheKey() { OId = oid, Verdi = verdi };
+            KodeverkKode kodeverkKode;
+   
+            klassifikasjonService.Synchronize(oid);
+
+            //sjekk om kode finnes i cache
+            if (kodeverkKodeCache.TryGetValue(kodeverkKodeCacheKey, out kodeverkKode))
+            {
+                logger.LogDebug($" {kodeverkKodeCacheKey}  funnet i cache");
+                return true;
+            }
+
+            //sjekk om kode finnes i db-context
+            if (HentFraRepository(kodeverkKodeCacheKey,out kodeverkKode))
+            {
+                 //legg koden til cache
+                 kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, kodeverkKode, this.cacheEntryOptions);
+                 logger.LogDebug($" {kodeverkKodeCacheKey}  lagt til i cache");
+                return true;
+            }
+            else
+                return false;
+        }
+
+
+        private bool HentFraRepository(KodeverkKodeCacheKey kodeverkKodeCacheKey,out KodeverkKode kodeverkKode)
+        {
+             kodeverkKode = kodeverkRepository.GetKodeverkKode(kodeverkKodeCacheKey.OId, kodeverkKodeCacheKey.Verdi);
+             return kodeverkKode != null;
+        }
 
         //bare for testing gjennom swagger
         public IEnumerable<IsValidCheckResponse> IsValidCheck(IEnumerable<IsValidCheckRequest> testIfValdid)
@@ -56,73 +81,6 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             }
             return IsValidCheckResponseList;
         }
-
-
-        public bool IsValidCheck(int oid, string verdi)
-        {
-            KodeverkKodeCacheKey kodeverkKodeCacheKey = new KodeverkKodeCacheKey() { OId = oid, Verdi = verdi };
-            KodeverkKode kodeverkKode;
-   
-            klassifikasjonService.Synchronize(oid);
-
-
-            //sjekk om kode finnes i cache
-
-            if (kodeverkKodeCache.TryGetValue(kodeverkKodeCacheKey, out kodeverkKode))
-            {
-                logger.LogDebug($" {kodeverkKodeCacheKey}  funnet i cache");
-                return true;
-            }
-
-            //sjekk om kode finnes i db-cache
-            if (IsInContext(kodeverkKodeCacheKey))
-                return true;
-            else
-                return false;
-
-        }
-
-
-        private bool IsInContext(KodeverkKodeCacheKey kodeverkKodeCacheKey)
-        {
-            //var kodeverkKode = tilgangKodeverkContext.KodeverkKoder.FirstOrDefault(k => k.OId == kodeverkKodeCacheKey.OId && k.Verdi.Equals(kodeverkKodeCacheKey.Verdi));
-            var kodeverkKode = kodeverkRepository.GetKodeverkKode(kodeverkKodeCacheKey.OId, kodeverkKodeCacheKey.Verdi);
-
-            if (kodeverkKode != null)
-            {
-                kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, kodeverkKode, this.cacheEntryOptions);
-                logger.LogDebug($" {kodeverkKodeCacheKey}  lagt til i cache");
-                return true;
-            }
-            return false;
-        }
-
-        private void UpdateContext(int oid, IEnumerable<KodeverkKode> updatedKodeverkKodeListe)
-        {
-            logger.LogDebug($"Update  Context  {oid} ");
-            kodeverkRepository.UpdateKodeverkKoder(oid, updatedKodeverkKodeListe);
-
-            //adde or uppdate Klassifikasjon
-            var klassifikasjon = kodeverkRepository.GetKlassifikasjon(oid);
-
-            if (klassifikasjon!=null)
-            {
-                klassifikasjon.Nedlasted = DateTime.Now;
-            }  else
-            {
-                kodeverkRepository.AddKlassifikasjon(oid);
-            }
-
-            kodeverkRepository.SaveChanges();
-        }
-
-        
-
-
-
-
-
-
 
     }
 
