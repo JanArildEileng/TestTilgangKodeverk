@@ -1,0 +1,20 @@
+POST: 
+http://localhost:52168/KodeverkKode/IsValidCheck
+
+
+BODY
+[
+  {
+    "oId": 9060,
+    "verdi": "FA"
+  },
+  {
+    "oId": 9070,
+    "verdi": "FA"
+  },
+{
+    "oId": 9060,
+    "verdi": "Jan"
+  }
+  
+]
