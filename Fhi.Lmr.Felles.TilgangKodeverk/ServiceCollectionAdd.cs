@@ -8,20 +8,14 @@ using System;
 namespace Fhi.Lmr.Felles.TilgangKodeverk
 {
 
-    public static class ServiceCollectionAdd { 
+    public static class ServiceCollectionAdd
+    {
         public static IServiceCollection AddTilgangKodeverk(this IServiceCollection services, IConfiguration Configuration)
         {
             GrunndataKodeverkOption GrunndataKodeverkOption = Configuration.GetSection(GrunndataKodeverkOption.GrunndataKodeverk).Get<GrunndataKodeverkOption>();
             services.Configure<GrunndataKodeverkOption>(Configuration.GetSection(GrunndataKodeverkOption.GrunndataKodeverk));
 
-            services.AddHttpClient(
-            "GrunndataKodeverkHttpKlient", c => {
-               // c.BaseAddress = new Uri(Configuration["GrunndataKodeverk:ApiUrl"]);
-                c.BaseAddress = new Uri(GrunndataKodeverkOption.ApiUrl);
-            }
-          );
-
-
+            services.AddHttpClient("GrunndataKodeverkHttpKlient", c => { c.BaseAddress = new Uri(GrunndataKodeverkOption.ApiUrl);  } );
             services.AddSingleton<GrunndataKodeverkHttpKlient>();
             services.AddSingleton<KodeverkKodeMemoryCache>();
             services.AddScoped<IKlassifikasjonService, KlassifikasjonService>();

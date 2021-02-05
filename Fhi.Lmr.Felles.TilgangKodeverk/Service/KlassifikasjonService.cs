@@ -87,7 +87,6 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             kodeverkRepository.UpdateKodeverkKoder(oid, oppdatertKodeverkListe);
 
             //adde or uppdate Klassifikasjon
-            //var klassifikasjon = tilgangKodeverkContext.Klassifikasjon.Where(k => k.OId == oid).FirstOrDefault();
             var klassifikasjon = kodeverkRepository.GetKlassifikasjon(oid);
 
             if (klassifikasjon != null)

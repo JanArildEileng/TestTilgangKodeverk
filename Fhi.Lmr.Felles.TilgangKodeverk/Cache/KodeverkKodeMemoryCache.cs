@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.Extensions.Caching.Memory;
 
 namespace Fhi.Lmr.Felles.TilgangKodeverk.Cache
 {
@@ -9,8 +6,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Cache
     {
         public MemoryCache Cache { get; set; }
         public KodeverkKodeMemoryCache()
-        {
-       
+        {      
             Cache = new MemoryCache(new MemoryCacheOptions
             {
             });
