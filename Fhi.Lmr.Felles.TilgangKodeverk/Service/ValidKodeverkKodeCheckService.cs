@@ -82,6 +82,12 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             return IsValidCheckResponseList;
         }
 
+        public int ClearCache()
+        {
+            kodeverkKodeCache.Compact(1.0);
+
+            return kodeverkKodeCache.Count;
+        }
     }
 
 }

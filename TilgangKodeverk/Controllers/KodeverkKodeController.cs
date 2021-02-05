@@ -35,5 +35,12 @@ namespace TilgangKodeverk.Controllers
              return validKodeverkKodeCheck.IsValidCheck(testIfValdidListe);
         }
 
+
+        [HttpPost("ClearCache")]
+        public int ClearCache([FromServices] IValidKodeverkKodeCheckService validKodeverkKodeCheck)
+        {
+            return validKodeverkKodeCheck.ClearCache();
+        }
+
     }
 }

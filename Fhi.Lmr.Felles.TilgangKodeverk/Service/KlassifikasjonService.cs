@@ -47,8 +47,12 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             };
 
             // hvis kodeverk mangler eller ikke synkronisert med grunndata , start synkronisering
-            if (klassifikasjon == null || (!klassifikasjon.Lastchecked.HasValue) || (DateTime.Now.Subtract(klassifikasjon.Lastchecked.Value) < TimeSpan.FromMinutes(UpdateIntervalInMinuttes)))
+            if (klassifikasjon == null || (!klassifikasjon.Lastchecked.HasValue) || (DateTime.Now.Subtract(klassifikasjon.Lastchecked.Value) > TimeSpan.FromMinutes(UpdateIntervalInMinuttes)))
             {
+                if (klassifikasjon!=null)
+                  logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   Lastchecked={klassifikasjon.Lastchecked?.ToString()}");
+                else
+                    logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   no klassifikasjon");
                 bool isUpdated = SynchronizeWithGrunndata(oid, klassifikasjon);
             }
         }
@@ -77,6 +81,9 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             }
             catch (Exception exp)
             {
+                //sett inn nul object hvis grunndata NOT_FOUND
+                kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid },new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) } , this.cacheEntryOptions);
+
                 logger.LogError($"SynchronizeWithGrunndata Exception={exp.Message}");
             }
 

@@ -7,5 +7,6 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
     {
         IEnumerable<IsValidCheckResponse> IsValidCheck(IEnumerable<IsValidCheckRequest> testIfValdid);
         bool  IsValidCheck(int oid,string verdi);
+        int ClearCache();
     }
 }
