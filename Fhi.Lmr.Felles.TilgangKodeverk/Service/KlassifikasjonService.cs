@@ -37,9 +37,8 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
         public void Synchronize(int oid)
         {
             KlassifikasjonCacheKey klassifikasjonCacheKey = new KlassifikasjonCacheKey() { OId = oid };
-            Klassifikasjon klassifikasjon = null;
-
-            if (!kodeverkKodeCache.TryGetValue(klassifikasjonCacheKey, out klassifikasjon))
+    
+            if (!kodeverkKodeCache.TryGetValue(klassifikasjonCacheKey,  out Klassifikasjon klassifikasjon))
             {
                 // klassifikasjon = tilgangKodeverkContext.Klassifikasjon.Where(k => k.OId == oid).AsNoTracking().FirstOrDefault();
                 klassifikasjon = kodeverkRepository.GetKlassifikasjon(oid);
@@ -61,10 +60,13 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             {
                 DateTime nedlasted = (klassifikasjon != null) ? klassifikasjon.Nedlasted : DateTime.MinValue;
                 logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   nedlasted={nedlasted}");
+
+                //kall grunnndat rest
                 var grunndataKodeListe = grunndataKodeverkHttpKlient.GetKoderByOidAndNedlastet(oid, nedlasted);
+                
                 if (grunndataKodeListe != null && grunndataKodeListe.Count() > 0)
                 {
-                    IEnumerable<KodeverkKode> oppdatertKodeverkListe = grunndataKodeListe.Select(u => new KodeverkKode() { OId = u.OId, Navn = u.Navn, Verdi = u.Verdi }).ToList();
+                    var oppdatertKodeverkListe = grunndataKodeListe.Select(u => new KodeverkKode() { OId = u.OId, Navn = u.Navn, Verdi = u.Verdi }).ToList();
                     UpdateDB(oid, oppdatertKodeverkListe);
                     isUpdated = true;
                     logger.LogDebug($"SynchronizeWithGrunndata oppdatertKodeverkListe:length={oppdatertKodeverkListe.Count()}");

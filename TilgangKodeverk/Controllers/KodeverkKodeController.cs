@@ -30,9 +30,9 @@ namespace TilgangKodeverk.Controllers
         }
 
         [HttpPost("IsValidCheck")]
-        public IEnumerable<IsValidCheckResponse> IsValidCheck([FromServices] IValidKodeverkKodeCheckService validKodeverkKodeCheck, [FromBody]IEnumerable<IsValidCheckRequest> testIfValdid )
+        public IEnumerable<IsValidCheckResponse> IsValidCheck([FromServices] IValidKodeverkKodeCheckService validKodeverkKodeCheck, [FromBody]IEnumerable<IsValidCheckRequest> testIfValdidListe )
         {
-             return validKodeverkKodeCheck.IsValidCheck(testIfValdid);
+             return validKodeverkKodeCheck.IsValidCheck(testIfValdidListe);
         }
 
     }
