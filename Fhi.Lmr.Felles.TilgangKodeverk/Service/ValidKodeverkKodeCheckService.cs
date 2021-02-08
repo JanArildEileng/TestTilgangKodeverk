@@ -18,6 +18,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
 
     public class ValidKodeverkKodeCheckService : IValidKodeverkKodeCheckService
     {
+        private readonly GrunndataKodeverkOption grunndataKodeverkOption;
         private readonly ILogger<ValidKodeverkKodeCheckService> logger;
         private readonly IKodeverkRepository kodeverkRepository;
         private readonly IKlassifikasjonService klassifikasjonService;
@@ -28,6 +29,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
    
         public ValidKodeverkKodeCheckService(IOptions<GrunndataKodeverkOption> grunndataKodeverkOption,ILogger<ValidKodeverkKodeCheckService> logger, KodeverkKodeMemoryCache kodeverkKodeMemoryCache, IKodeverkRepository kodeverkRepository, IKlassifikasjonService klassifikasjonService)
         {
+            this.grunndataKodeverkOption = grunndataKodeverkOption.Value;
             this.logger = logger;
             this.kodeverkRepository = kodeverkRepository;
             this.klassifikasjonService = klassifikasjonService;
@@ -43,25 +45,33 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             KodeverkKodeCacheKey kodeverkKodeCacheKey = new KodeverkKodeCacheKey() { OId = oid, Verdi = verdi };
             KodeverkKode kodeverkKode;
    
+            if (grunndataKodeverkOption.AktivSynkronisering)
             klassifikasjonService.Synchronize(oid);
 
             //sjekk om kode finnes i cache
             if (kodeverkKodeCache.TryGetValue(kodeverkKodeCacheKey, out kodeverkKode))
             {
                 logger.LogDebug($" {kodeverkKodeCacheKey}  funnet i cache");
-                return true;
+                return kodeverkKode.Gyldig;
             }
 
             //sjekk om kode finnes i db-context
             if (HentFraRepository(kodeverkKodeCacheKey,out kodeverkKode))
             {
-                 //legg koden til cache
+                //legg koden til cache
+           
                  kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, kodeverkKode, this.cacheEntryOptions);
                  logger.LogDebug($" {kodeverkKodeCacheKey}  lagt til i cache");
-                return true;
+                 return true;
             }
             else
+            {
+                //legg til ugyldig kode i cache
+                kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, new KodeverkKode() {OId=oid,Verdi=verdi,Gyldig=false }, this.cacheEntryOptions);
+                logger.LogDebug($" {kodeverkKodeCacheKey}  lagt til i cache med ugyldig status");
                 return false;
+            }
+               
         }
 
 

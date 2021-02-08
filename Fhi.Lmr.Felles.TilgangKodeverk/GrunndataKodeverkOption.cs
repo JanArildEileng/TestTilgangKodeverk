@@ -8,6 +8,8 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk
     {
         public const string GrunndataKodeverk = "GrunndataKodeverk";
 
+        public Boolean AktivSynkronisering { get; set; }
+
         public string ApiUrl { get; set; }
         public string UpdateIntervalInMinuttes { get; set; }
         public string KodeverkKodeExpiration { get; set; }

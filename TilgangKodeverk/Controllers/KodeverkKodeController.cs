@@ -1,4 +1,5 @@
-﻿using Fhi.Lmr.Felles.TilgangKodeverk.Entities;
+﻿using Fhi.Lmr.Felles.TilgangKodeverk.Cache;
+using Fhi.Lmr.Felles.TilgangKodeverk.Entities;
 using Fhi.Lmr.Felles.TilgangKodeverk.Model.Dto;
 using Fhi.Lmr.Felles.TilgangKodeverk.Service;
 using Microsoft.AspNetCore.Mvc;
@@ -36,10 +37,17 @@ namespace TilgangKodeverk.Controllers
         }
 
 
-        [HttpPost("ClearCache")]
-        public int ClearCache([FromServices] IValidKodeverkKodeCheckService validKodeverkKodeCheck)
+
+        [HttpGet("GetCacheCount")]
+        public int GetCacheCount([FromServices] KodeverkKodeMemoryCache kodeverkKodeMemoryCache)
         {
-            return validKodeverkKodeCheck.ClearCache();
+            return kodeverkKodeMemoryCache.Cache.Count;
+        }
+
+        [HttpPost("ClearCache")]
+        public int ClearCache([FromServices] KodeverkKodeMemoryCache kodeverkKodeMemoryCache)
+        {
+            return kodeverkKodeMemoryCache.ClearCache();
         }
 
     }

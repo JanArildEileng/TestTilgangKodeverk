@@ -38,13 +38,14 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
         {
             KlassifikasjonCacheKey klassifikasjonCacheKey = new KlassifikasjonCacheKey() { OId = oid };
     
+            //sjekk cache, eventuelt hent fra repoistory
             if (!kodeverkKodeCache.TryGetValue(klassifikasjonCacheKey,  out Klassifikasjon klassifikasjon))
             {
-                // klassifikasjon = tilgangKodeverkContext.Klassifikasjon.Where(k => k.OId == oid).AsNoTracking().FirstOrDefault();
                 klassifikasjon = kodeverkRepository.GetKlassifikasjon(oid);
                 if (klassifikasjon != null)
                     kodeverkKodeCache.Set<Klassifikasjon>(klassifikasjonCacheKey, klassifikasjon, this.cacheEntryOptions);
             };
+
 
             // hvis kodeverk mangler eller ikke synkronisert med grunndata , start synkronisering
             if (klassifikasjon == null || (!klassifikasjon.Lastchecked.HasValue) || (DateTime.Now.Subtract(klassifikasjon.Lastchecked.Value) > TimeSpan.FromMinutes(UpdateIntervalInMinuttes)))
@@ -53,6 +54,8 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
                   logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   Lastchecked={klassifikasjon.Lastchecked?.ToString()}");
                 else
                     logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   no klassifikasjon");
+
+
                 bool isUpdated = SynchronizeWithGrunndata(oid, klassifikasjon);
             }
         }
@@ -65,27 +68,48 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
                 DateTime nedlasted = (klassifikasjon != null) ? klassifikasjon.Nedlasted : DateTime.MinValue;
                 logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   nedlasted={nedlasted}");
 
-                //kall grunnndat rest
-                var grunndataKodeListe = grunndataKodeverkHttpKlient.GetKoderByOidAndNedlastet(oid, nedlasted);
-                
-                if (grunndataKodeListe != null && grunndataKodeListe.Count() > 0)
-                {
-                    var oppdatertKodeverkListe = grunndataKodeListe.Select(u => new KodeverkKode() { OId = u.OId, Navn = u.Navn, Verdi = u.Verdi }).ToList();
-                    UpdateDB(oid, oppdatertKodeverkListe);
-                    isUpdated = true;
-                    logger.LogDebug($"SynchronizeWithGrunndata oppdatertKodeverkListe:length={oppdatertKodeverkListe.Count()}");
-                }
-                if (klassifikasjon != null)
-                    klassifikasjon.Lastchecked = DateTime.Now;
+                //kall grunnndaat rest
+                var response= grunndataKodeverkHttpKlient.GetKoderByOidAndNedlastet(oid, nedlasted);
 
+                if (response.Status==StatusEnum.OK)
+                {
+                     logger.LogDebug($"SynchronizeWithGrunndata oppdatertKodeverkListe:length={response.KodeverkKoder.Count()}");
+                     var oppdatertKodeverkListe = response.KodeverkKoder.Select(u => new KodeverkKode() { OId = u.OId, Navn = u.Navn, Verdi = u.Verdi }).ToList();
+                     UpdateDB(oid, oppdatertKodeverkListe);
+                     isUpdated = true;
+                }
+                else if (response.Status == StatusEnum.NoContent)
+                {
+                    //sett inn null object hvis grunndata NOT_FOUND
+                    logger.LogDebug($"SynchronizeWithGrunndata Not found ={oid} updating cache");
+                    kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid }, new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) }, this.cacheEntryOptions);
+                }
+
+                else if (response.Status == StatusEnum.NotFound)
+                {
+                    //sett inn null object hvis grunndata NOT_FOUND
+                    logger.LogDebug($"SynchronizeWithGrunndata Not found ={oid}");
+                    kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid }, new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) }, this.cacheEntryOptions);
+
+                } else  //error
+                {
+                    //sett inn null object hvis exception 
+                    logger.LogError($"SynchronizeWithGrunndata Exception={response.Exception.Message}");
+                    kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid }, new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) }, this.cacheEntryOptions);
+                }
+
+
+              
             }
             catch (Exception exp)
             {
-                //sett inn nul object hvis grunndata NOT_FOUND
-                kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid },new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) } , this.cacheEntryOptions);
-
                 logger.LogError($"SynchronizeWithGrunndata Exception={exp.Message}");
+                throw;
             }
+
+            if (klassifikasjon != null)
+                klassifikasjon.Lastchecked = DateTime.Now;
+
 
             return isUpdated;
         }

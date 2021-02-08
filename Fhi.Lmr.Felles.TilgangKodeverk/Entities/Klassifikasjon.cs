@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Fhi.Lmr.Felles.TilgangKodeverk.Entities
@@ -9,6 +10,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Entities
         public int KlassifikasjonId { get; set; }
         public int OId { get; set; }
         public DateTime Nedlasted { get; set; }
+        [NotMapped]
         public DateTime? Lastchecked { get; set; }
     }
 }

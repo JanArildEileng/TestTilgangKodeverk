@@ -11,5 +11,12 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Cache
             {
             });
         }
+
+        public int ClearCache()
+        {
+            Cache.Compact(1.0);
+
+            return Cache.Count;
+        }
     }
 }

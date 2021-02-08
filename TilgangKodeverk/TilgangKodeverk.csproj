@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fhi.Lmr.Grunndata.Kodeverk.Apiklient" Version="0.1.1-CI-20210205-135437" />
+    <PackageReference Include="Fhi.Lmr.Grunndata.Kodeverk.Apiklient" Version="0.1.1-CI-20210208-121026" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" NoWarn="NU1605" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" NoWarn="NU1605" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
