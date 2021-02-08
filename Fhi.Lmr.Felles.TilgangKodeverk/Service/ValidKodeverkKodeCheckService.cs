@@ -2,15 +2,11 @@
 using Fhi.Lmr.Felles.TilgangKodeverk.Contracts;
 using Fhi.Lmr.Felles.TilgangKodeverk.Entities;
 using Fhi.Lmr.Felles.TilgangKodeverk.Model.Dto;
-using Fhi.Lmr.Grunndata.Kodeverk.Apiklient;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 
 namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
@@ -23,62 +19,57 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
         private readonly IKodeverkRepository kodeverkRepository;
         private readonly IKlassifikasjonService klassifikasjonService;
         private readonly MemoryCache kodeverkKodeCache;
-   
-        MemoryCacheEntryOptions cacheEntryOptions;
+        private readonly MemoryCacheEntryOptions cacheEntryOptions;
 
-   
-        public ValidKodeverkKodeCheckService(IOptions<GrunndataKodeverkOption> grunndataKodeverkOption,ILogger<ValidKodeverkKodeCheckService> logger, KodeverkKodeMemoryCache kodeverkKodeMemoryCache, IKodeverkRepository kodeverkRepository, IKlassifikasjonService klassifikasjonService)
+
+        public ValidKodeverkKodeCheckService(IOptions<GrunndataKodeverkOption> grunndataKodeverkOption, ILogger<ValidKodeverkKodeCheckService> logger, KodeverkKodeMemoryCache kodeverkKodeMemoryCache, IKodeverkRepository kodeverkRepository, IKlassifikasjonService klassifikasjonService)
         {
             this.grunndataKodeverkOption = grunndataKodeverkOption.Value;
             this.logger = logger;
             this.kodeverkRepository = kodeverkRepository;
             this.klassifikasjonService = klassifikasjonService;
             this.kodeverkKodeCache = kodeverkKodeMemoryCache.Cache;
-          
-            //TODO
             this.cacheEntryOptions = new MemoryCacheEntryOptions()
-                .SetAbsoluteExpiration(DateTime.Now.AddMinutes(int.Parse(grunndataKodeverkOption.Value.KodeverkKodeExpiration)));  
+                .SetAbsoluteExpiration(DateTime.Now.AddMinutes(int.Parse(grunndataKodeverkOption.Value.KodeverkKodeExpiration)));
         }
 
         public bool IsValidCheck(int oid, string verdi)
         {
             KodeverkKodeCacheKey kodeverkKodeCacheKey = new KodeverkKodeCacheKey() { OId = oid, Verdi = verdi };
-            KodeverkKode kodeverkKode;
-   
-            if (grunndataKodeverkOption.AktivSynkronisering)
-            klassifikasjonService.Synchronize(oid);
 
-            //sjekk om kode finnes i cache
-            if (kodeverkKodeCache.TryGetValue(kodeverkKodeCacheKey, out kodeverkKode))
+            //hvis AktivSynkronisering , kjør denne først
+            if (grunndataKodeverkOption.AktivSynkronisering)
+                klassifikasjonService.Synchronize(oid);
+
+            // hvis koden finnes i cache, retuneres denne gyldighet
+            if (kodeverkKodeCache.TryGetValue(kodeverkKodeCacheKey, out KodeverkKode kodeverkKode))
             {
-                logger.LogDebug($" {kodeverkKodeCacheKey}  funnet i cache");
+                logger.LogDebug($" {kodeverkKodeCacheKey}  funnet i cache Gyldig={kodeverkKode.Gyldig}");
                 return kodeverkKode.Gyldig;
             }
 
-            //sjekk om kode finnes i db-context
-            if (HentFraRepository(kodeverkKodeCacheKey,out kodeverkKode))
+            //hvis koden finnes i repository ->
+            if (HentFraRepository(kodeverkKodeCacheKey, out kodeverkKode))
             {
-                //legg koden til cache
-           
-                 kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, kodeverkKode, this.cacheEntryOptions);
-                 logger.LogDebug($" {kodeverkKodeCacheKey}  lagt til i cache");
-                 return true;
+                // -> legg koden til cache
+                kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, kodeverkKode, this.cacheEntryOptions);
+                logger.LogDebug($" {kodeverkKodeCacheKey}  lagt til i cache");
+                return true;
             }
             else
             {
-                //legg til ugyldig kode i cache
-                kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, new KodeverkKode() {OId=oid,Verdi=verdi,Gyldig=false }, this.cacheEntryOptions);
+                // -> legg ugyldig (dummy-) kode til cache
+                kodeverkKodeCache.Set<KodeverkKode>(kodeverkKodeCacheKey, new KodeverkKode() { OId = oid, Verdi = verdi, Gyldig = false }, this.cacheEntryOptions);
                 logger.LogDebug($" {kodeverkKodeCacheKey}  lagt til i cache med ugyldig status");
                 return false;
             }
-               
         }
 
 
-        private bool HentFraRepository(KodeverkKodeCacheKey kodeverkKodeCacheKey,out KodeverkKode kodeverkKode)
+        private bool HentFraRepository(KodeverkKodeCacheKey kodeverkKodeCacheKey, out KodeverkKode kodeverkKode)
         {
-             kodeverkKode = kodeverkRepository.GetKodeverkKode(kodeverkKodeCacheKey.OId, kodeverkKodeCacheKey.Verdi);
-             return kodeverkKode != null;
+            kodeverkKode = kodeverkRepository.GetKodeverkKode(kodeverkKodeCacheKey.OId, kodeverkKodeCacheKey.Verdi);
+            return kodeverkKode != null;
         }
 
         //bare for testing gjennom swagger
@@ -92,12 +83,6 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             return IsValidCheckResponseList;
         }
 
-        public int ClearCache()
-        {
-            kodeverkKodeCache.Compact(1.0);
-
-            return kodeverkKodeCache.Count;
-        }
     }
 
 }

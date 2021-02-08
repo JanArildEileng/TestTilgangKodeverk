@@ -17,10 +17,8 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
         private readonly ILogger<KlassifikasjonService> logger;
         private readonly GrunndataKodeverkHttpKlient grunndataKodeverkHttpKlient;
         private readonly MemoryCache kodeverkKodeCache;
-
-        public int UpdateIntervalInMinuttes { get; }
-
-        private MemoryCacheEntryOptions cacheEntryOptions;
+        private readonly int UpdateIntervalInMinuttes; 
+        private readonly MemoryCacheEntryOptions cacheEntryOptions;
 
         public KlassifikasjonService(IOptions<GrunndataKodeverkOption> grunndataKodeverkOption,IKodeverkRepository kodeverkRepository, KodeverkKodeMemoryCache kodeverkKodeMemoryCache, ILogger<KlassifikasjonService> logger, GrunndataKodeverkHttpKlient grunndataKodeverkHttpKlient)
         {
@@ -44,19 +42,18 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
                 klassifikasjon = kodeverkRepository.GetKlassifikasjon(oid);
                 if (klassifikasjon != null)
                     kodeverkKodeCache.Set<Klassifikasjon>(klassifikasjonCacheKey, klassifikasjon, this.cacheEntryOptions);
-            };
+            } else  {
+                //hvis klassifikasjon allerede er funnet å være ugyldig
+                if (!klassifikasjon.Gyldig)
+                    return;
+            }
+
 
 
             // hvis kodeverk mangler eller ikke synkronisert med grunndata , start synkronisering
             if (klassifikasjon == null || (!klassifikasjon.Lastchecked.HasValue) || (DateTime.Now.Subtract(klassifikasjon.Lastchecked.Value) > TimeSpan.FromMinutes(UpdateIntervalInMinuttes)))
             {
-                if (klassifikasjon!=null)
-                  logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   Lastchecked={klassifikasjon.Lastchecked?.ToString()}");
-                else
-                    logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   no klassifikasjon");
-
-
-                bool isUpdated = SynchronizeWithGrunndata(oid, klassifikasjon);
+                  bool isUpdated = SynchronizeWithGrunndata(oid, klassifikasjon);
             }
         }
 
@@ -68,38 +65,36 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
                 DateTime nedlasted = (klassifikasjon != null) ? klassifikasjon.Nedlasted : DateTime.MinValue;
                 logger.LogDebug($"SynchronizeWithGrunndata Oid={oid}   nedlasted={nedlasted}");
 
-                //kall grunnndaat rest
+                //kall grunnndata rest-api 
                 var response= grunndataKodeverkHttpKlient.GetKoderByOidAndNedlastet(oid, nedlasted);
 
                 if (response.Status==StatusEnum.OK)
                 {
                      logger.LogDebug($"SynchronizeWithGrunndata oppdatertKodeverkListe:length={response.KodeverkKoder.Count()}");
                      var oppdatertKodeverkListe = response.KodeverkKoder.Select(u => new KodeverkKode() { OId = u.OId, Navn = u.Navn, Verdi = u.Verdi }).ToList();
-                     UpdateDB(oid, oppdatertKodeverkListe);
-                     isUpdated = true;
+                     OppdaterRepoistory(oid, oppdatertKodeverkListe);
+         
+                    isUpdated = true;
                 }
                 else if (response.Status == StatusEnum.NoContent)
                 {
                     //sett inn null object hvis grunndata NOT_FOUND
                     logger.LogDebug($"SynchronizeWithGrunndata Not found ={oid} updating cache");
-                    kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid }, new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) }, this.cacheEntryOptions);
+                    isUpdated = true;
                 }
 
                 else if (response.Status == StatusEnum.NotFound)
                 {
                     //sett inn null object hvis grunndata NOT_FOUND
                     logger.LogDebug($"SynchronizeWithGrunndata Not found ={oid}");
-                    kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid }, new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) }, this.cacheEntryOptions);
+                    LeggDummyKlassifikasjonTilCache(oid);
 
-                } else  //error
+                } else  //annen ukjent error
                 {
                     //sett inn null object hvis exception 
-                    logger.LogError($"SynchronizeWithGrunndata Exception={response.Exception.Message}");
-                    kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid }, new Klassifikasjon() { Lastchecked = DateTime.Now.AddMinutes(3) }, this.cacheEntryOptions);
+                    logger.LogError($"SynchronizeWithGrunndata Error");
+                    LeggDummyKlassifikasjonTilCache(oid);
                 }
-
-
-              
             }
             catch (Exception exp)
             {
@@ -107,19 +102,32 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
                 throw;
             }
 
-            if (klassifikasjon != null)
-                klassifikasjon.Lastchecked = DateTime.Now;
 
+            if (klassifikasjon != null)
+            {
+                klassifikasjon.Lastchecked = DateTime.Now;
+            }
+               
 
             return isUpdated;
         }
 
-        private void UpdateDB(int oid, IEnumerable<KodeverkKode> oppdatertKodeverkListe)
+
+        private Klassifikasjon LeggDummyKlassifikasjonTilCache(int oid)
         {
-            logger.LogDebug($"UpdateDB  {oid} ");
+            KlassifikasjonCacheKey klassifikasjonCacheKey = new KlassifikasjonCacheKey() { OId = oid };
+            Klassifikasjon klassifikasjon = new Klassifikasjon() { OId=oid, Lastchecked = DateTime.Now, Gyldig=false };
+            kodeverkKodeCache.Set<Klassifikasjon>(new KlassifikasjonCacheKey() { OId = oid }, klassifikasjon, this.cacheEntryOptions);
+            return klassifikasjon;
+        }
+
+
+        private void OppdaterRepoistory(int oid, IEnumerable<KodeverkKode> oppdatertKodeverkListe)
+        {
+            logger.LogDebug($"OppdaterRepoistory  {oid} ");
             kodeverkRepository.UpdateKodeverkKoder(oid, oppdatertKodeverkListe);
 
-            //adde or uppdate Klassifikasjon
+            //legg til eller oppdater Klassifikasjon
             var klassifikasjon = kodeverkRepository.GetKlassifikasjon(oid);
 
             if (klassifikasjon != null)
@@ -128,7 +136,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Service
             }
             else
             {
-                kodeverkRepository.AddKlassifikasjon(oid);
+                kodeverkRepository.AddKlassifikasjon(new Klassifikasjon() { OId = oid, Nedlasted = DateTime.Now });
             }
 
             kodeverkRepository.SaveChanges();

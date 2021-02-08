@@ -12,5 +12,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Entities
         public DateTime Nedlasted { get; set; }
         [NotMapped]
         public DateTime? Lastchecked { get; set; }
+        [NotMapped]
+        public bool Gyldig { get; set; } = true;
     }
 }

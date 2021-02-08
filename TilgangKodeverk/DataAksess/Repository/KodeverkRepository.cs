@@ -22,9 +22,9 @@ namespace TilgangKodeverk.DataAksess.Repository
             return tilgangKodeverkContext.Klassifikasjon.Where(k => k.OId == oid).AsNoTracking().FirstOrDefault();
         }
 
-        public void AddKlassifikasjon(int oid)
+        public void AddKlassifikasjon(Klassifikasjon klassifikasjon)
         {
-            tilgangKodeverkContext.Klassifikasjon.Add(new Klassifikasjon() { OId = oid, Nedlasted = DateTime.Now });
+            tilgangKodeverkContext.Klassifikasjon.Add(klassifikasjon);
         }
 
         public KodeverkKode GetKodeverkKode(int oid, string verdi)

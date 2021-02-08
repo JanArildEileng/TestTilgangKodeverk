@@ -8,7 +8,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk.Contracts
     public interface IKodeverkRepository
     {
         Klassifikasjon GetKlassifikasjon(int oid);
-        void AddKlassifikasjon(int oid);
+        void AddKlassifikasjon(Klassifikasjon klassifikasjon);
         KodeverkKode GetKodeverkKode(int oid, string verdi);
         void UpdateKodeverkKoder(int oid, IEnumerable<KodeverkKode> updatedKodeverkKodeListe);
 
