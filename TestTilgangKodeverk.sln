@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TilgangKodeverk", "TilgangKodeverk\TilgangKodeverk.csproj", "{D8C61F2E-B0D3-42CA-9298-76E2E3BE4295}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fhi.Lmr.Felles.TilgangKodeverk.TestWeb", "Fhi.Lmr.Felles.TilgangKodeverk.TestWeb\Fhi.Lmr.Felles.TilgangKodeverk.TestWeb.csproj", "{D8C61F2E-B0D3-42CA-9298-76E2E3BE4295}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{0EE0E936-18B9-4C15-90DF-9207A7528607}"
 	ProjectSection(SolutionItems) = preProject

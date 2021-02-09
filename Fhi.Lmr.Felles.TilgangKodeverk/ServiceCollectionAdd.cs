@@ -16,7 +16,7 @@ namespace Fhi.Lmr.Felles.TilgangKodeverk
             services.Configure<GrunndataKodeverkOption>(Configuration.GetSection(GrunndataKodeverkOption.GrunndataKodeverk));
 
             services.AddHttpClient("GrunndataKodeverkHttpKlient", c => { c.BaseAddress = new Uri(GrunndataKodeverkOption.ApiUrl);  } );
-            services.AddSingleton<GrunndataKodeverkHttpKlient>();
+            services.AddSingleton<IGrunndataKodeverkHttpKlient,GrunndataKodeverkHttpKlient>();
             services.AddSingleton<KodeverkKodeMemoryCache>();
             services.AddScoped<IKlassifikasjonService, KlassifikasjonService>();
             services.AddScoped<IValidKodeverkKodeCheckService, ValidKodeverkKodeCheckService>();
